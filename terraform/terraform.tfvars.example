@@ -1,0 +1,4 @@
+key_name          = "your-existing-keypair"
+allowed_ssh_cidrs = ["YOUR.IP.ADDR.ESS/32"]   # curl -s ifconfig.me
+# region          = "us-east-1"
+# az_suffix       = "a"

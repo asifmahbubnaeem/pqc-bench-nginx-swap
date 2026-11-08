@@ -1,0 +1,2 @@
+{"scenario": "reload", "arm": "ossl30", "profile": "classical", "rate": 500, "trial": "3",
+ "duration_s": 315, "warm_s": 30, "finished_utc": "2026-11-08T08:44:40Z"}

@@ -1,0 +1,88 @@
+run,event,t_rel_s,requests,errors,p99_ms,max_ms,quiet_p99_ms
+reload-ossl30-classical-r500-t1,reload n=1 master=26689,30.9,1500,0,2.18,5.47,2.17
+reload-ossl30-classical-r500-t1,reload n=2 master=26689,60.9,1500,0,2.2,6.37,2.17
+reload-ossl30-classical-r500-t1,reload n=3 master=26689,90.9,1500,0,2.2,3.53,2.17
+reload-ossl30-classical-r500-t1,reload n=4 master=26689,120.9,1500,0,2.17,4.05,2.17
+reload-ossl30-classical-r500-t1,reload n=5 master=26689,150.9,1500,0,2.22,3.2,2.17
+reload-ossl30-classical-r500-t1,reload n=6 master=26689,180.9,1500,0,2.21,10.3,2.17
+reload-ossl30-classical-r500-t1,reload n=7 master=26689,210.9,1500,0,2.18,3.89,2.17
+reload-ossl30-classical-r500-t1,reload n=8 master=26689,240.9,1500,0,2.19,6.42,2.17
+reload-ossl30-classical-r500-t1,reload n=9 master=26689,270.9,1500,0,2.16,3.14,2.17
+reload-ossl30-classical-r500-t2,reload n=1 master=30865,30.8,1500,0,2.17,3.11,2.18
+reload-ossl30-classical-r500-t2,reload n=2 master=30865,60.8,1500,0,2.2,3.35,2.18
+reload-ossl30-classical-r500-t2,reload n=3 master=30865,90.8,1500,0,2.2,4.07,2.18
+reload-ossl30-classical-r500-t2,reload n=4 master=30865,120.8,1500,0,2.21,2.52,2.18
+reload-ossl30-classical-r500-t2,reload n=5 master=30865,150.8,1500,0,2.2,3.41,2.18
+reload-ossl30-classical-r500-t2,reload n=6 master=30865,180.8,1500,0,2.21,3.38,2.18
+reload-ossl30-classical-r500-t2,reload n=7 master=30865,210.8,1500,0,2.21,3.06,2.18
+reload-ossl30-classical-r500-t2,reload n=8 master=30865,240.9,1500,0,2.2,3.12,2.18
+reload-ossl30-classical-r500-t2,reload n=9 master=30865,270.9,1500,0,2.16,4.21,2.18
+reload-ossl30-classical-r500-t3,reload n=1 master=37203,31.1,1500,0,2.17,3.09,2.16
+reload-ossl30-classical-r500-t3,reload n=2 master=37203,61.1,1500,0,2.17,3.06,2.16
+reload-ossl30-classical-r500-t3,reload n=3 master=37203,91.1,1500,0,2.17,3.18,2.16
+reload-ossl30-classical-r500-t3,reload n=4 master=37203,121.1,1500,0,2.16,3.91,2.16
+reload-ossl30-classical-r500-t3,reload n=5 master=37203,151.1,1500,0,2.16,3.01,2.16
+reload-ossl30-classical-r500-t3,reload n=6 master=37203,181.1,1500,0,2.16,3.01,2.16
+reload-ossl30-classical-r500-t3,reload n=7 master=37203,211.1,1500,0,2.17,2.6,2.16
+reload-ossl30-classical-r500-t3,reload n=8 master=37203,241.2,1500,0,2.18,4.85,2.16
+reload-ossl30-classical-r500-t3,reload n=9 master=37203,271.2,1500,0,2.17,4.91,2.16
+reload-ossl35-pq-r500-t1,reload n=1 master=28778,31.2,1500,0,2.27,3.43,2.3
+reload-ossl35-pq-r500-t1,reload n=2 master=28778,61.2,1500,0,2.33,3.23,2.3
+reload-ossl35-pq-r500-t1,reload n=3 master=28778,91.2,1500,0,2.34,3.28,2.3
+reload-ossl35-pq-r500-t1,reload n=4 master=28778,121.2,1500,0,2.33,4.82,2.3
+reload-ossl35-pq-r500-t1,reload n=5 master=28778,151.2,1500,0,2.33,4.19,2.3
+reload-ossl35-pq-r500-t1,reload n=6 master=28778,181.2,1500,0,2.31,3.68,2.3
+reload-ossl35-pq-r500-t1,reload n=7 master=28778,211.2,1500,0,2.3,3.3,2.3
+reload-ossl35-pq-r500-t1,reload n=8 master=28778,241.2,1500,0,2.31,4.32,2.3
+reload-ossl35-pq-r500-t1,reload n=9 master=28778,271.2,1500,0,2.31,4.26,2.3
+reload-ossl35-pq-r500-t2,reload n=1 master=35095,31.1,1500,0,2.27,2.66,2.29
+reload-ossl35-pq-r500-t2,reload n=2 master=35095,61.1,1500,0,2.27,3.9,2.29
+reload-ossl35-pq-r500-t2,reload n=3 master=35095,91.1,1500,0,2.28,3.07,2.29
+reload-ossl35-pq-r500-t2,reload n=4 master=35095,121.2,1500,0,2.29,3.68,2.29
+reload-ossl35-pq-r500-t2,reload n=5 master=35095,151.2,1500,0,2.27,3.9,2.29
+reload-ossl35-pq-r500-t2,reload n=6 master=35095,181.2,1500,0,2.29,2.86,2.29
+reload-ossl35-pq-r500-t2,reload n=7 master=35095,211.2,1500,0,2.31,2.98,2.29
+reload-ossl35-pq-r500-t2,reload n=8 master=35095,241.2,1500,0,2.33,3.6,2.29
+reload-ossl35-pq-r500-t2,reload n=9 master=35095,271.2,1500,0,2.29,3.98,2.29
+reload-ossl35-pq-r500-t3,reload n=1 master=39358,31.4,1500,0,2.28,3.0,2.28
+reload-ossl35-pq-r500-t3,reload n=2 master=39358,61.5,1500,0,2.29,3.98,2.28
+reload-ossl35-pq-r500-t3,reload n=3 master=39358,91.5,1500,0,2.28,3.97,2.28
+reload-ossl35-pq-r500-t3,reload n=4 master=39358,121.5,1500,0,2.32,3.71,2.28
+reload-ossl35-pq-r500-t3,reload n=5 master=39358,151.5,1500,0,2.29,5.04,2.28
+reload-ossl35-pq-r500-t3,reload n=6 master=39358,181.5,1500,0,2.28,3.22,2.28
+reload-ossl35-pq-r500-t3,reload n=7 master=39358,211.5,1500,0,2.28,5.02,2.28
+reload-ossl35-pq-r500-t3,reload n=8 master=39358,241.5,1500,0,2.27,2.96,2.28
+reload-ossl35-pq-r500-t3,reload n=9 master=39358,271.5,1500,0,2.3,4.03,2.28
+swap-fast-rollback-ossl30-classical-r500-t1,usr2 old_master=45903,31.2,1500,0,2.29,2.6,2.25
+swap-fast-rollback-ossl30-classical-r500-t1,winch old_master=45903,37.7,1500,0,2.3,3.0,2.25
+swap-fast-rollback-ossl30-classical-r500-t1,hup old_master=45903 (old workers respawn with old binary+config),67.7,1500,0,2.27,3.25,2.25
+swap-fast-rollback-ossl30-classical-r500-t1,quit new_master=46211,70.7,1500,0,2.17,2.83,2.25
+swap-fast-rollback-ossl30-classical-r500-t2,usr2 old_master=46926,31.7,1500,0,2.36,3.84,2.27
+swap-fast-rollback-ossl30-classical-r500-t2,winch old_master=46926,38.2,1500,0,2.3,2.55,2.27
+swap-fast-rollback-ossl30-classical-r500-t2,hup old_master=46926 (old workers respawn with old binary+config),68.2,1500,0,2.3,2.76,2.27
+swap-fast-rollback-ossl30-classical-r500-t2,quit new_master=47243,71.2,1500,0,2.18,2.41,2.27
+swap-fast-rollback-ossl30-classical-r500-t3,usr2 old_master=47943,31.2,1500,0,2.35,3.06,2.26
+swap-fast-rollback-ossl30-classical-r500-t3,winch old_master=47943,37.7,1500,0,2.27,3.03,2.26
+swap-fast-rollback-ossl30-classical-r500-t3,hup old_master=47943 (old workers respawn with old binary+config),67.7,1500,0,2.27,3.68,2.26
+swap-fast-rollback-ossl30-classical-r500-t3,quit new_master=48248,70.7,1500,0,2.17,3.1,2.26
+swap-ossl30-classical-r500-t1,usr2 old_master=41491,31.9,1500,0,2.27,3.53,2.27
+swap-ossl30-classical-r500-t1,winch old_master=41491,38.4,1500,0,2.26,3.81,2.27
+swap-ossl30-classical-r500-t1,quit old_master=41491,48.4,1500,0,2.26,3.72,2.27
+swap-ossl30-classical-r500-t1,usr2 old_master=41803 (naive),93.4,1500,0,2.29,2.58,2.27
+swap-ossl30-classical-r500-t1,usr2 old_master=41803,140.0,1500,0,2.27,3.75,2.27
+swap-ossl30-classical-r500-t1,winch old_master=41803,146.5,1500,0,2.2,3.61,2.27
+swap-ossl30-classical-r500-t1,quit old_master=41803,156.5,1500,0,2.2,3.1,2.27
+swap-ossl30-classical-r500-t2,usr2 old_master=42965,31.7,1500,0,2.34,5.85,2.29
+swap-ossl30-classical-r500-t2,winch old_master=42965,38.2,1500,0,2.3,3.12,2.29
+swap-ossl30-classical-r500-t2,quit old_master=42965,48.2,1500,0,2.31,3.43,2.29
+swap-ossl30-classical-r500-t2,usr2 old_master=43301 (naive),93.3,1500,0,2.29,3.83,2.29
+swap-ossl30-classical-r500-t2,usr2 old_master=43301,139.8,1500,0,2.32,3.87,2.29
+swap-ossl30-classical-r500-t2,winch old_master=43301,146.4,1500,0,2.2,3.57,2.29
+swap-ossl30-classical-r500-t2,quit old_master=43301,156.4,1500,0,2.19,3.37,2.29
+swap-ossl30-classical-r500-t3,usr2 old_master=44468,31.1,1500,0,2.37,2.92,2.29
+swap-ossl30-classical-r500-t3,winch old_master=44468,37.6,1500,0,2.27,3.56,2.29
+swap-ossl30-classical-r500-t3,quit old_master=44468,47.6,1500,0,2.28,3.5,2.29
+swap-ossl30-classical-r500-t3,usr2 old_master=44776 (naive),92.7,1500,0,2.3,3.19,2.29
+swap-ossl30-classical-r500-t3,usr2 old_master=44776,139.2,1500,0,2.38,3.21,2.29
+swap-ossl30-classical-r500-t3,winch old_master=44776,145.8,1500,0,2.18,3.46,2.29
+swap-ossl30-classical-r500-t3,quit old_master=44776,155.8,1500,0,2.18,2.67,2.29

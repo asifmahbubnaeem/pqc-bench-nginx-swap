@@ -1,0 +1,7 @@
+==> https://172.31.15.221/  rate=4000/s  duration=1m0s  groups=default
+    t= 10s ok=39993 err=0 dropped=0
+    t= 20s ok=79995 err=0 dropped=0
+    t= 30s ok=119993 err=0 dropped=0
+    t= 40s ok=159994 err=0 dropped=0
+    t= 50s ok=199993 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=2.17ms p99=6.17ms p999=8.65ms  -> runs/soak-ossl30-classical-r4000-tL2/loadgen.csv

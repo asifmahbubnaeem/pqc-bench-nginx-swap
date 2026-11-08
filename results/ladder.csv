@@ -1,0 +1,13 @@
+arm,profile,rate,trials,ok_rate,errors,nginx_cores,nginx_cores_sd,us_per_hs,us_per_hs_sd,host_cpu_pct,tls_p50,req_p99,arm_label
+ossl30,classical,1000,3,1000.0,0,0.412,0.006,412.333,5.774,19.5,0.713,1.98,"A: OpenSSL 3.0, classical"
+ossl30,classical,2000,3,2000.0,0,0.85,0.006,424.833,3.215,48.667,0.767,1.817,"A: OpenSSL 3.0, classical"
+ossl30,classical,3000,3,3000.0,0,1.302,0.012,433.867,3.855,69.433,0.827,2.71,"A: OpenSSL 3.0, classical"
+ossl30,classical,4000,3,4000.0,0,1.73,0.008,432.4,1.905,88.633,1.213,6.203,"A: OpenSSL 3.0, classical"
+ossl35,classical,1000,3,1000.0,0,0.349,0.01,349.0,10.0,26.833,0.673,2.403,"B: OpenSSL 3.5, classical"
+ossl35,classical,2000,3,2000.0,0,0.697,0.01,348.5,4.77,42.9,0.69,1.61,"B: OpenSSL 3.5, classical"
+ossl35,classical,3000,3,3000.0,0,1.064,0.006,354.567,1.963,58.967,0.72,1.89,"B: OpenSSL 3.5, classical"
+ossl35,classical,4000,3,4000.0,0,1.43,0.005,357.5,1.323,75.1,0.833,94.59,"B: OpenSSL 3.5, classical"
+ossl35,pq,1000,3,1000.0,0,0.402,0.006,402.333,5.774,20.567,0.81,1.81,"B: OpenSSL 3.5, X25519MLKEM768"
+ossl35,pq,2000,3,2000.0,0,0.833,0.011,416.667,5.485,42.533,0.893,2.16,"B: OpenSSL 3.5, X25519MLKEM768"
+ossl35,pq,3000,3,3000.0,0,1.273,0.012,424.2,3.851,68.033,0.943,2.9,"B: OpenSSL 3.5, X25519MLKEM768"
+ossl35,pq,4000,3,4000.0,0,1.688,0.018,421.9,4.564,86.867,1.307,6.017,"B: OpenSSL 3.5, X25519MLKEM768"

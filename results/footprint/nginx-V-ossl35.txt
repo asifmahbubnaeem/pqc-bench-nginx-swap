@@ -1,0 +1,5 @@
+nginx version: nginx/1.28.0
+built by gcc 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
+built with OpenSSL 3.5.2 5 Aug 2025
+TLS SNI support enabled
+configure arguments: --prefix=/opt/nginx --with-http_ssl_module --with-http_v2_module --with-http_stub_status_module --with-threads --with-openssl=/opt/build/ossl35/openssl-3.5.2 --with-openssl-opt='no-tests no-docs'

@@ -1,0 +1,15 @@
+# raw per-request data (hundreds of MB) — publish as a release asset if needed
+results/**/loadgen.csv*
+results/**/bench.log*
+results/**/error.log
+results/**/sampler.pid
+results/_old-ladder/
+results/rebuild/
+# terraform state + your IP
+terraform/.terraform/
+terraform/terraform.tfstate*
+terraform/terraform.tfvars
+# local builds
+loadgen/pq-loadgen
+__pycache__/
+.venv/

@@ -1,0 +1,18 @@
+1794128776.570209152 start arm=ossl30 profile=classical master=44468 openssl=3.0.13
+1794128817.850673656 swap_begin to=ossl35 profile=pq old_master=44468
+1794128817.884717511 usr2 old_master=44468
+1794128819.399068796 new_master_up new_master=44776
+1794128824.404922159 winch old_master=44468
+1794128834.409973959 quit old_master=44468
+1794128834.416574160 swap_done master=44776
+1794128879.421117540 naive_rollback_begin (binary→ossl30, config left as pq)
+1794128879.445221952 naive_t_failed nginx: [emerg] SSL_CTX_set1_curves_list("X25519MLKEM768:X25519:prime256v1") failed (SSL: error:0A080106:SSL routines::passed invalid argument:group 'X25519MLKEM
+1794128879.448192131 usr2 old_master=44776 (naive)
+1794128880.953306071 naive_rollback_failed: new master exited, old master 44776 still serving (3 emerg lines in error.log)
+1794128925.984539800 swap_begin to=ossl30 profile=classical old_master=44776
+1794128926.010234790 usr2 old_master=44776
+1794128927.526208028 new_master_up new_master=45374
+1794128932.531307784 winch old_master=44776
+1794128942.536209143 quit old_master=44776
+1794128942.543041965 swap_done master=45374
+1794128942.545261886 events_done swap

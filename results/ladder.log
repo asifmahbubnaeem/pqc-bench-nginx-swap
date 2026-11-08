@@ -1,0 +1,563 @@
+==> nginx not built on this target yet — building (~3 min)
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+ /etc/needrestart/restart.d/systemd-manager
+ systemctl restart cron.service irqbalance.service multipathd.service packagekit.service polkit.service ssh.service systemd-journald.service systemd-networkd.service systemd-resolved.service systemd-timedated.service systemd-udevd.service udisks2.service
+
+Service restarts being deferred:
+ systemctl restart ModemManager.service
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ ubuntu @ session #7: sshd[1469]
+==> [ossl30] configure
+==> [ossl30] make -j2 (OpenSSL compile included for ossl35)
+==> [ossl35] configure
+==> [ossl35] make -j2 (OpenSSL compile included for ossl35)
+
+arm     configure_s  make_s  total_s  binary_bytes  stripped_bytes  openssl
+ossl30  4.4          15.9    20.3     5344504       1200408         3.0.13 
+ossl35  4.3          118.9   123.2    12711424      7646488         3.5.2  
+
+== ossl30
+nginx version: nginx/1.28.0
+built with OpenSSL 3.0.13 30 Jan 2024
+   shared libs: 8  libssl: 1
+== ossl35
+nginx version: nginx/1.28.0
+built with OpenSSL 3.5.2 5 Aug 2025
+   shared libs: 6  libssl: 0
+---- [1/36]
+==> soak-ossl35-classical-r3000-tL3  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794139051.637304248 start arm=ossl35 profile=classical master=24536 openssl=3.5.2
+    [target] 1794139070.336193621 events_done soak
+    t= 40s ok=120000 err=0 dropped=0
+    t= 50s ok=150001 err=0 dropped=0
+==> done: ok=180001 err=0 dropped=0  p50=1.17ms p99=1.93ms p999=2.85ms  -> runs/soak-ossl35-classical-r3000-tL3/loadgen.csv
+==> results: results/soak-ossl35-classical-r3000-tL3
+---- [2/36]
+==> soak-ossl30-classical-r1000-tL3  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794139200.966716998 start arm=ossl30 profile=classical master=24930 openssl=3.0.13
+    [target] 1794139212.354795112 events_done soak
+    t= 40s ok=40001 err=0 dropped=0
+    t= 50s ok=50002 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.09ms p99=2.11ms p999=2.50ms  -> runs/soak-ossl30-classical-r1000-tL3/loadgen.csv
+==> results: results/soak-ossl30-classical-r1000-tL3
+---- [3/36]
+==> soak-ossl35-classical-r4000-tL1  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794139323.407749157 start arm=ossl35 profile=classical master=25309 openssl=3.5.2
+    [target] 1794139334.516750769 events_done soak
+    t= 40s ok=159996 err=0 dropped=0
+    t= 50s ok=199995 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=1.45ms p99=3.38ms p999=5.52ms  -> runs/soak-ossl35-classical-r4000-tL1/loadgen.csv
+==> results: results/soak-ossl35-classical-r4000-tL1
+---- [4/36]
+==> soak-ossl35-pq-r2000-tL1  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794139457.127661744 start arm=ossl35 profile=pq master=25694 openssl=3.5.2
+    [target] 1794139468.356161073 events_done soak
+    t= 40s ok=79998 err=0 dropped=0
+    t= 50s ok=99998 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.47ms p99=2.15ms p999=2.60ms  -> runs/soak-ossl35-pq-r2000-tL1/loadgen.csv
+==> results: results/soak-ossl35-pq-r2000-tL1
+---- [5/36]
+==> soak-ossl35-pq-r2000-tL3  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794139587.097631102 start arm=ossl35 profile=pq master=26085 openssl=3.5.2
+    [target] 1794139598.305737740 events_done soak
+    t= 40s ok=80000 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.47ms p99=2.15ms p999=2.63ms  -> runs/soak-ossl35-pq-r2000-tL3/loadgen.csv
+==> results: results/soak-ossl35-pq-r2000-tL3
+---- [6/36]
+==> soak-ossl30-classical-r2000-tL3  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794139819.548738297 start arm=ossl30 profile=classical master=26485 openssl=3.0.13
+    [target] 1794139840.484840545 events_done soak
+    t= 40s ok=80000 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.32ms p99=1.82ms p999=2.22ms  -> runs/soak-ossl30-classical-r2000-tL3/loadgen.csv
+==> results: results/soak-ossl30-classical-r2000-tL3
+---- [7/36]
+==> soak-ossl35-pq-r3000-tL1  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794140100.940749120 start arm=ossl35 profile=pq master=26879 openssl=3.5.2
+    [target] 1794140114.480935884 events_done soak
+    t= 40s ok=120000 err=0 dropped=0
+    t= 50s ok=150000 err=0 dropped=0
+==> done: ok=180001 err=0 dropped=0  p50=1.54ms p99=2.90ms p999=4.23ms  -> runs/soak-ossl35-pq-r3000-tL1/loadgen.csv
+==> results: results/soak-ossl35-pq-r3000-tL1
+---- [8/36]
+==> soak-ossl35-pq-r4000-tL2  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794140288.535379481 start arm=ossl35 profile=pq master=27295 openssl=3.5.2
+    [target] 1794140300.477813134 events_done soak
+    t= 40s ok=159995 err=0 dropped=0
+    t= 50s ok=199991 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=2.25ms p99=5.80ms p999=7.66ms  -> runs/soak-ossl35-pq-r4000-tL2/loadgen.csv
+==> results: results/soak-ossl35-pq-r4000-tL2
+---- [9/36]
+==> soak-ossl35-pq-r1000-tL2  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794140430.471540320 start arm=ossl35 profile=pq master=27689 openssl=3.5.2
+    [target] 1794140449.605089904 events_done soak
+    t= 40s ok=40001 err=0 dropped=0
+    t= 50s ok=50002 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.51ms p99=1.86ms p999=2.21ms  -> runs/soak-ossl35-pq-r1000-tL2/loadgen.csv
+==> results: results/soak-ossl35-pq-r1000-tL2
+---- [10/36]
+==> soak-ossl30-classical-r1000-tL2  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794140634.739867225 start arm=ossl30 profile=classical master=28080 openssl=3.0.13
+    [target] 1794140647.283522986 events_done soak
+    t= 40s ok=40000 err=0 dropped=0
+    t= 50s ok=50000 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.09ms p99=1.48ms p999=2.48ms  -> runs/soak-ossl30-classical-r1000-tL2/loadgen.csv
+==> results: results/soak-ossl30-classical-r1000-tL2
+---- [11/36]
+==> soak-ossl35-classical-r2000-tL3  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794140772.062735370 start arm=ossl35 profile=classical master=28472 openssl=3.5.2
+    [target] 1794140786.719828382 events_done soak
+    t= 40s ok=80000 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.16ms p99=1.59ms p999=1.93ms  -> runs/soak-ossl35-classical-r2000-tL3/loadgen.csv
+==> results: results/soak-ossl35-classical-r2000-tL3
+---- [12/36]
+==> soak-ossl35-classical-r4000-tL2  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794140915.070692484 start arm=ossl35 profile=classical master=28861 openssl=3.5.2
+    [target] 1794140926.061973665 events_done soak
+    t= 40s ok=159997 err=0 dropped=0
+    t= 50s ok=199998 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=1.47ms p99=277.10ms p999=524.94ms  -> runs/soak-ossl35-classical-r4000-tL2/loadgen.csv
+==> results: results/soak-ossl35-classical-r4000-tL2
+---- [13/36]
+==> soak-ossl35-classical-r4000-tL3  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794141084.601632296 start arm=ossl35 profile=classical master=29304 openssl=3.5.2
+    [target] 1794141095.507572200 events_done soak
+    t= 40s ok=159996 err=0 dropped=0
+    t= 50s ok=199997 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=1.45ms p99=3.29ms p999=4.89ms  -> runs/soak-ossl35-classical-r4000-tL3/loadgen.csv
+==> results: results/soak-ossl35-classical-r4000-tL3
+---- [14/36]
+==> soak-ossl30-classical-r2000-tL2  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794141225.900049216 start arm=ossl30 profile=classical master=29700 openssl=3.0.13
+    [target] 1794141236.726556495 events_done soak
+    t= 40s ok=79999 err=0 dropped=0
+    t= 50s ok=99998 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.31ms p99=1.79ms p999=2.23ms  -> runs/soak-ossl30-classical-r2000-tL2/loadgen.csv
+==> results: results/soak-ossl30-classical-r2000-tL2
+---- [15/36]
+==> soak-ossl30-classical-r1000-tL1  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794141360.049497842 start arm=ossl30 profile=classical master=30089 openssl=3.0.13
+    [target] 1794141370.963347449 events_done soak
+    t= 40s ok=40001 err=0 dropped=0
+    t= 50s ok=50001 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.10ms p99=2.35ms p999=2.51ms  -> runs/soak-ossl30-classical-r1000-tL1/loadgen.csv
+==> results: results/soak-ossl30-classical-r1000-tL1
+---- [16/36]
+==> soak-ossl35-classical-r3000-tL2  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794141493.079456891 start arm=ossl35 profile=classical master=30483 openssl=3.5.2
+    [target] 1794141505.535226152 events_done soak
+    t= 40s ok=119998 err=0 dropped=0
+    t= 50s ok=149999 err=0 dropped=0
+==> done: ok=180002 err=0 dropped=0  p50=1.17ms p99=1.87ms p999=2.75ms  -> runs/soak-ossl35-classical-r3000-tL2/loadgen.csv
+==> results: results/soak-ossl35-classical-r3000-tL2
+---- [17/36]
+==> soak-ossl30-classical-r3000-tL3  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794141629.971453814 start arm=ossl30 profile=classical master=30891 openssl=3.0.13
+    [target] 1794141641.321831654 events_done soak
+    t= 40s ok=119998 err=0 dropped=0
+    t= 50s ok=150000 err=0 dropped=0
+==> done: ok=180002 err=0 dropped=0  p50=1.41ms p99=2.74ms p999=4.16ms  -> runs/soak-ossl30-classical-r3000-tL3/loadgen.csv
+==> results: results/soak-ossl30-classical-r3000-tL3
+---- [18/36]
+==> soak-ossl35-classical-r3000-tL1  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794141812.163647488 start arm=ossl35 profile=classical master=31285 openssl=3.5.2
+    [target] 1794141823.444564720 events_done soak
+    t= 40s ok=119999 err=0 dropped=0
+    t= 50s ok=149999 err=0 dropped=0
+==> done: ok=180001 err=0 dropped=0  p50=1.17ms p99=1.87ms p999=2.71ms  -> runs/soak-ossl35-classical-r3000-tL1/loadgen.csv
+==> results: results/soak-ossl35-classical-r3000-tL1
+---- [19/36]
+==> soak-ossl30-classical-r4000-tL2  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794141952.841812154 start arm=ossl30 profile=classical master=31685 openssl=3.0.13
+    [target] 1794141964.086282583 events_done soak
+    t= 40s ok=159994 err=0 dropped=0
+    t= 50s ok=199993 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=2.17ms p99=6.17ms p999=8.65ms  -> runs/soak-ossl30-classical-r4000-tL2/loadgen.csv
+==> results: results/soak-ossl30-classical-r4000-tL2
+---- [20/36]
+==> soak-ossl35-pq-r4000-tL3  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794142094.585365856 start arm=ossl35 profile=pq master=32078 openssl=3.5.2
+    [target] 1794142105.579155827 events_done soak
+    t= 40s ok=159985 err=0 dropped=0
+    t= 50s ok=199991 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=2.25ms p99=5.66ms p999=7.74ms  -> runs/soak-ossl35-pq-r4000-tL3/loadgen.csv
+==> results: results/soak-ossl35-pq-r4000-tL3
+---- [21/36]
+==> soak-ossl35-classical-r1000-tL2  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794142229.745058010 start arm=ossl35 profile=classical master=32509 openssl=3.5.2
+    [target] 1794142240.665328829 events_done soak
+    t= 40s ok=40000 err=0 dropped=0
+    t= 50s ok=50001 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.04ms p99=2.40ms p999=2.55ms  -> runs/soak-ossl35-classical-r1000-tL2/loadgen.csv
+==> results: results/soak-ossl35-classical-r1000-tL2
+---- [22/36]
+==> soak-ossl35-pq-r1000-tL1  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794142365.746951414 start arm=ossl35 profile=pq master=32912 openssl=3.5.2
+    [target] 1794142377.170591206 events_done soak
+    t= 40s ok=40000 err=0 dropped=0
+    t= 50s ok=50001 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.34ms p99=1.76ms p999=2.16ms  -> runs/soak-ossl35-pq-r1000-tL1/loadgen.csv
+==> results: results/soak-ossl35-pq-r1000-tL1
+---- [23/36]
+==> soak-ossl30-classical-r4000-tL3  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794142495.837256732 start arm=ossl30 profile=classical master=33297 openssl=3.0.13
+    [target] 1794142507.026275236 events_done soak
+    t= 40s ok=159984 err=0 dropped=0
+    t= 50s ok=199993 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=2.13ms p99=5.93ms p999=7.98ms  -> runs/soak-ossl30-classical-r4000-tL3/loadgen.csv
+==> results: results/soak-ossl30-classical-r4000-tL3
+---- [24/36]
+==> soak-ossl30-classical-r3000-tL1  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794142636.482590532 start arm=ossl30 profile=classical master=33705 openssl=3.0.13
+    [target] 1794142648.148667434 events_done soak
+    t= 40s ok=119997 err=0 dropped=0
+    t= 50s ok=149999 err=0 dropped=0
+==> done: ok=180001 err=0 dropped=0  p50=1.41ms p99=2.65ms p999=4.16ms  -> runs/soak-ossl30-classical-r3000-tL1/loadgen.csv
+==> results: results/soak-ossl30-classical-r3000-tL1
+---- [25/36]
+==> soak-ossl35-classical-r2000-tL2  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794142790.189467173 start arm=ossl35 profile=classical master=34101 openssl=3.5.2
+    [target] 1794142801.646154548 events_done soak
+    t= 40s ok=79999 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.17ms p99=1.61ms p999=1.93ms  -> runs/soak-ossl35-classical-r2000-tL2/loadgen.csv
+==> results: results/soak-ossl35-classical-r2000-tL2
+---- [26/36]
+==> soak-ossl35-classical-r1000-tL1  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794142965.501310905 start arm=ossl35 profile=classical master=34522 openssl=3.5.2
+    [target] 1794142977.124829456 events_done soak
+    t= 40s ok=40004 err=0 dropped=0
+    t= 50s ok=50003 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.05ms p99=2.40ms p999=2.56ms  -> runs/soak-ossl35-classical-r1000-tL1/loadgen.csv
+==> results: results/soak-ossl35-classical-r1000-tL1
+---- [27/36]
+==> soak-ossl30-classical-r3000-tL2  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794143099.345373859 start arm=ossl30 profile=classical master=34915 openssl=3.0.13
+    [target] 1794143109.160944840 events_done soak
+    t= 40s ok=119998 err=0 dropped=0
+    t= 50s ok=149999 err=0 dropped=0
+==> done: ok=180001 err=0 dropped=0  p50=1.43ms p99=2.74ms p999=4.09ms  -> runs/soak-ossl30-classical-r3000-tL2/loadgen.csv
+==> results: results/soak-ossl30-classical-r3000-tL2
+---- [28/36]
+==> soak-ossl35-pq-r4000-tL1  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794143288.478124520 start arm=ossl35 profile=pq master=35324 openssl=3.5.2
+    [target] 1794143301.570958027 events_done soak
+    t= 40s ok=159994 err=0 dropped=0
+    t= 50s ok=199996 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=2.39ms p99=6.59ms p999=9.86ms  -> runs/soak-ossl35-pq-r4000-tL1/loadgen.csv
+==> results: results/soak-ossl35-pq-r4000-tL1
+---- [29/36]
+==> soak-ossl35-pq-r3000-tL3  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794143443.711493668 start arm=ossl35 profile=pq master=35721 openssl=3.5.2
+    [target] 1794143454.537749493 events_done soak
+    t= 40s ok=119998 err=0 dropped=0
+    t= 50s ok=149997 err=0 dropped=0
+==> done: ok=180002 err=0 dropped=0  p50=1.55ms p99=2.98ms p999=4.25ms  -> runs/soak-ossl35-pq-r3000-tL3/loadgen.csv
+==> results: results/soak-ossl35-pq-r3000-tL3
+---- [30/36]
+==> soak-ossl35-pq-r2000-tL2  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794143589.338588537 start arm=ossl35 profile=pq master=36118 openssl=3.5.2
+    [target] 1794143600.555874359 events_done soak
+    t= 40s ok=80000 err=0 dropped=0
+    t= 50s ok=100001 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.48ms p99=2.18ms p999=2.66ms  -> runs/soak-ossl35-pq-r2000-tL2/loadgen.csv
+==> results: results/soak-ossl35-pq-r2000-tL2
+---- [31/36]
+==> soak-ossl35-pq-r1000-tL3  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794143717.541330142 start arm=ossl35 profile=pq master=36506 openssl=3.5.2
+    [target] 1794143728.771169130 events_done soak
+    t= 40s ok=40000 err=0 dropped=0
+    t= 50s ok=50001 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.29ms p99=1.81ms p999=2.14ms  -> runs/soak-ossl35-pq-r1000-tL3/loadgen.csv
+==> results: results/soak-ossl35-pq-r1000-tL3
+---- [32/36]
+==> soak-ossl35-classical-r2000-tL1  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794143870.428024760 start arm=ossl35 profile=classical master=36914 openssl=3.5.2
+    [target] 1794143881.336769353 events_done soak
+    t= 40s ok=80001 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.17ms p99=1.63ms p999=1.99ms  -> runs/soak-ossl35-classical-r2000-tL1/loadgen.csv
+==> results: results/soak-ossl35-classical-r2000-tL1
+---- [33/36]
+==> soak-ossl30-classical-r2000-tL1  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794144001.586756513 start arm=ossl30 profile=classical master=37301 openssl=3.0.13
+    [target] 1794144012.406990820 events_done soak
+    t= 40s ok=80000 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.33ms p99=1.84ms p999=2.20ms  -> runs/soak-ossl30-classical-r2000-tL1/loadgen.csv
+==> results: results/soak-ossl30-classical-r2000-tL1
+---- [34/36]
+==> soak-ossl35-classical-r1000-tL3  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794144172.907045310 start arm=ossl35 profile=classical master=37705 openssl=3.5.2
+    [target] 1794144183.724092946 events_done soak
+    t= 40s ok=40003 err=0 dropped=0
+    t= 50s ok=50004 err=0 dropped=0
+==> done: ok=60000 err=0 dropped=0  p50=1.06ms p99=2.41ms p999=2.58ms  -> runs/soak-ossl35-classical-r1000-tL3/loadgen.csv
+==> results: results/soak-ossl35-classical-r1000-tL3
+---- [35/36]
+==> soak-ossl30-classical-r4000-tL1  (duration 60s, rate 4000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794144321.899558871 start arm=ossl30 profile=classical master=38102 openssl=3.0.13
+    [target] 1794144333.748347770 events_done soak
+    t= 40s ok=159998 err=0 dropped=0
+    t= 50s ok=199998 err=0 dropped=0
+==> done: ok=240001 err=0 dropped=0  p50=2.23ms p99=6.51ms p999=9.13ms  -> runs/soak-ossl30-classical-r4000-tL1/loadgen.csv
+==> results: results/soak-ossl30-classical-r4000-tL1
+---- [36/36]
+==> soak-ossl35-pq-r3000-tL2  (duration 60s, rate 3000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794144470.715614258 start arm=ossl35 profile=pq master=38499 openssl=3.5.2
+    [target] 1794144481.821949624 events_done soak
+    t= 40s ok=119996 err=0 dropped=0
+    t= 50s ok=149998 err=0 dropped=0
+==> done: ok=180002 err=0 dropped=0  p50=1.54ms p99=2.82ms p999=4.24ms  -> runs/soak-ossl35-pq-r3000-tL2/loadgen.csv
+==> results: results/soak-ossl35-pq-r3000-tL2
+# Phase 7 results
+
+## Static footprint
+
+`build/build.csv`
+
+| arm | configure_s | make_s | total_s | binary_bytes | stripped_bytes | openssl |
+|---|---|---|---|---|---|---|
+| ossl30 | 4.3 | 15.7 | 20.1 | 5344504 | 1200408 | 3.0.13 |
+| ossl35 | 4.2 | 117.7 | 121.9 | 12711424 | 7646488 | 3.5.2 |
+
+`footprint/footprint.csv`
+
+| arm | binary_bytes | stripped_bytes | shared_ssl_libs_bytes | tls_total_bytes | shared_lib_count | openssl |
+|---|---|---|---|---|---|---|
+| ossl30 | 5344504 | 1200408 | 5400656 | 6601064 | 6 | 3.0.13 |
+| ossl35 | 12711424 | 7646488 | 0 | 7646488 | 4 | 3.5.2 |
+
+## Idle memory
+
+| arm | profile | rss_total_mb_med | rss_master_mb_max | rss_worker_mb_max |
+|---|---|---|---|---|
+| ossl30 | classical | 23.5 | 2.0 | 10.8 |
+| ossl35 | pq | 24.1 | 2.3 | 10.9 |
+
+## Runs under load
+
+| scenario | arm | profile | rate | trial | requests | errors | error_pct | error_kinds | req_p50 | req_p99 | req_p999 | tls_p50 | tls_p99 | quiet_p99 | cpu_busy_med_pct | rss_total_mb_med | rss_worker_mb_max | rss_slope_mb_per_h | pq_share_pct | worker_pids_seen |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| reload | ossl30 | classical | 500 | 1 | 157501 | 0 | 0.0 |  | 1.59 | 2.17 | 2.81 | 0.72 | 0.84 | 2.17 | 12.1 | 34.1 | 14.1 |  | 0.0 | 20 |
+| reload | ossl30 | classical | 500 | 2 | 157501 | 0 | 0.0 |  | 1.6 | 2.18 | 2.96 | 0.73 | 0.86 | 2.18 | 12.1 | 34.1 | 14.1 |  | 0.0 | 20 |
+| reload | ossl30 | classical | 500 | 3 | 157501 | 0 | 0.0 |  | 1.58 | 2.16 | 2.66 | 0.72 | 0.84 | 2.16 | 11.2 | 34.0 | 14.1 |  | 0.0 | 20 |
+| reload | ossl35 | pq | 500 | 1 | 157501 | 0 | 0.0 |  | 1.68 | 2.3 | 3.03 | 0.83 | 0.98 | 2.3 | 11.5 | 35.5 | 14.7 |  | 100.0 | 20 |
+| reload | ossl35 | pq | 500 | 2 | 157501 | 0 | 0.0 |  | 1.66 | 2.28 | 2.7 | 0.82 | 0.96 | 2.29 | 13.4 | 35.5 | 14.7 |  | 100.0 | 20 |
+| reload | ossl35 | pq | 500 | 3 | 157501 | 0 | 0.0 |  | 1.67 | 2.28 | 2.94 | 0.82 | 0.96 | 2.28 | 10.7 | 35.5 | 14.7 |  | 100.0 | 20 |
+| soak | ossl30 | classical | 500 | 1 | 300001 | 0 | 0.0 |  | 1.58 | 2.18 | 2.74 | 0.72 | 0.82 | 2.18 | 11.6 | 30.0 | 14.0 | 2.08 | 0.0 | 2 |
+| soak | ossl35 | pq | 500 | 1 | 300001 | 0 | 0.0 |  | 1.65 | 2.27 | 2.8 | 0.82 | 0.92 | 2.27 | 10.1 | 31.5 | 14.6 | 2.29 | 100.0 | 2 |
+| swap-fast-rollback | ossl30 | classical | 500 | 1 | 52501 | 0 | 0.0 |  | 1.6 | 2.24 | 2.65 | 0.74 | 0.93 | 2.25 | 11.2 | 30.3 | 14.7 |  | 33.3 | 6 |
+| swap-fast-rollback | ossl30 | classical | 500 | 2 | 52501 | 0 | 0.0 |  | 1.62 | 2.27 | 2.59 | 0.74 | 0.94 | 2.27 | 13.8 | 30.3 | 14.6 |  | 33.1 | 6 |
+| swap-fast-rollback | ossl30 | classical | 500 | 3 | 52501 | 0 | 0.0 |  | 1.6 | 2.25 | 2.74 | 0.74 | 0.93 | 2.26 | 11.7 | 30.4 | 14.6 |  | 33.1 | 6 |
+| swap | ossl30 | classical | 500 | 1 | 90001 | 0 | 0.0 |  | 1.64 | 2.26 | 2.71 | 0.81 | 0.92 | 2.27 | 13.7 | 37.1 | 14.6 |  | 60.0 | 6 |
+| swap | ossl30 | classical | 500 | 2 | 90001 | 0 | 0.0 |  | 1.65 | 2.29 | 2.75 | 0.81 | 0.95 | 2.29 | 14.1 | 37.1 | 14.7 |  | 60.0 | 6 |
+| swap | ossl30 | classical | 500 | 3 | 90001 | 0 | 0.0 |  | 1.64 | 2.28 | 2.63 | 0.81 | 0.95 | 2.29 | 12.1 | 37.1 | 14.6 |  | 60.1 | 6 |
+
+## CPU ladder (nginx processes only, steady window, mean ± sd over trials)
+
+| arm_label | rate | trials | ok_rate | errors | nginx_cores | nginx_cores_sd | us_per_hs | us_per_hs_sd | host_cpu_pct | tls_p50 | req_p99 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A: OpenSSL 3.0, classical | 1000 | 3 | 1000.0 | 0 | 0.412 | 0.006 | 412.333 | 5.774 | 19.5 | 0.713 | 1.98 |
+| A: OpenSSL 3.0, classical | 2000 | 3 | 2000.0 | 0 | 0.85 | 0.006 | 424.833 | 3.215 | 48.667 | 0.767 | 1.817 |
+| A: OpenSSL 3.0, classical | 3000 | 3 | 3000.0 | 0 | 1.302 | 0.012 | 433.867 | 3.855 | 69.433 | 0.827 | 2.71 |
+| A: OpenSSL 3.0, classical | 4000 | 3 | 4000.0 | 0 | 1.73 | 0.008 | 432.4 | 1.905 | 88.633 | 1.213 | 6.203 |
+| B: OpenSSL 3.5, classical | 1000 | 3 | 1000.0 | 0 | 0.349 | 0.01 | 349.0 | 10.0 | 26.833 | 0.673 | 2.403 |
+| B: OpenSSL 3.5, classical | 2000 | 3 | 2000.0 | 0 | 0.697 | 0.01 | 348.5 | 4.77 | 42.9 | 0.69 | 1.61 |
+| B: OpenSSL 3.5, classical | 3000 | 3 | 3000.0 | 0 | 1.064 | 0.006 | 354.567 | 1.963 | 58.967 | 0.72 | 1.89 |
+| B: OpenSSL 3.5, classical | 4000 | 3 | 4000.0 | 0 | 1.43 | 0.005 | 357.5 | 1.323 | 75.1 | 0.833 | 94.59 |
+| B: OpenSSL 3.5, X25519MLKEM768 | 1000 | 3 | 1000.0 | 0 | 0.402 | 0.006 | 402.333 | 5.774 | 20.567 | 0.81 | 1.81 |
+| B: OpenSSL 3.5, X25519MLKEM768 | 2000 | 3 | 2000.0 | 0 | 0.833 | 0.011 | 416.667 | 5.485 | 42.533 | 0.893 | 2.16 |
+| B: OpenSSL 3.5, X25519MLKEM768 | 3000 | 3 | 3000.0 | 0 | 1.273 | 0.012 | 424.2 | 3.851 | 68.033 | 0.943 | 2.9 |
+| B: OpenSSL 3.5, X25519MLKEM768 | 4000 | 3 | 4000.0 | 0 | 1.688 | 0.018 | 421.9 | 4.564 | 86.867 | 1.307 | 6.017 |
+
+### Cost per full handshake and implied ceiling (2 vCPU, nginx CPU only)
+
+| arm | µs CPU per handshake (median over clean rates) | implied max handshakes/s at 100% CPU |
+|---|---|---|
+| A: OpenSSL 3.0, classical | 429 | 4,666 |
+| B: OpenSSL 3.5, classical | 352 | 5,685 |
+| B: OpenSSL 3.5, X25519MLKEM768 | 419 | 4,770 |
+
+OpenSSL 3.0 → 3.5 (classical): -77 µs/handshake (-17.9%).  
+Adding X25519MLKEM768 on 3.5: +68 µs/handshake (+19.2%).  
+Net, A → B with PQ: -9 µs/handshake (-2.2%).
+
+## Event windows (3 s after each signal)
+
+| run | t_rel_s | event | requests | errors | p99_ms | quiet_p99_ms | max_ms |
+|---|---|---|---|---|---|---|---|
+| reload-ossl30-classical-r500-t1 | 30.9 | reload n=1 master=26689 | 1500 | 0 | 2.18 | 2.17 | 5.47 |
+| reload-ossl30-classical-r500-t1 | 60.9 | reload n=2 master=26689 | 1500 | 0 | 2.2 | 2.17 | 6.37 |
+| reload-ossl30-classical-r500-t1 | 90.9 | reload n=3 master=26689 | 1500 | 0 | 2.2 | 2.17 | 3.53 |
+| reload-ossl30-classical-r500-t1 | 120.9 | reload n=4 master=26689 | 1500 | 0 | 2.17 | 2.17 | 4.05 |
+| reload-ossl30-classical-r500-t1 | 150.9 | reload n=5 master=26689 | 1500 | 0 | 2.22 | 2.17 | 3.2 |
+| reload-ossl30-classical-r500-t1 | 180.9 | reload n=6 master=26689 | 1500 | 0 | 2.21 | 2.17 | 10.3 |
+| reload-ossl30-classical-r500-t1 | 210.9 | reload n=7 master=26689 | 1500 | 0 | 2.18 | 2.17 | 3.89 |
+| reload-ossl30-classical-r500-t1 | 240.9 | reload n=8 master=26689 | 1500 | 0 | 2.19 | 2.17 | 6.42 |
+| reload-ossl30-classical-r500-t1 | 270.9 | reload n=9 master=26689 | 1500 | 0 | 2.16 | 2.17 | 3.14 |
+| reload-ossl30-classical-r500-t2 | 30.8 | reload n=1 master=30865 | 1500 | 0 | 2.17 | 2.18 | 3.11 |
+| reload-ossl30-classical-r500-t2 | 60.8 | reload n=2 master=30865 | 1500 | 0 | 2.2 | 2.18 | 3.35 |
+| reload-ossl30-classical-r500-t2 | 90.8 | reload n=3 master=30865 | 1500 | 0 | 2.2 | 2.18 | 4.07 |
+| reload-ossl30-classical-r500-t2 | 120.8 | reload n=4 master=30865 | 1500 | 0 | 2.21 | 2.18 | 2.52 |
+| reload-ossl30-classical-r500-t2 | 150.8 | reload n=5 master=30865 | 1500 | 0 | 2.2 | 2.18 | 3.41 |
+| reload-ossl30-classical-r500-t2 | 180.8 | reload n=6 master=30865 | 1500 | 0 | 2.21 | 2.18 | 3.38 |
+| reload-ossl30-classical-r500-t2 | 210.8 | reload n=7 master=30865 | 1500 | 0 | 2.21 | 2.18 | 3.06 |
+| reload-ossl30-classical-r500-t2 | 240.9 | reload n=8 master=30865 | 1500 | 0 | 2.2 | 2.18 | 3.12 |
+| reload-ossl30-classical-r500-t2 | 270.9 | reload n=9 master=30865 | 1500 | 0 | 2.16 | 2.18 | 4.21 |
+| reload-ossl30-classical-r500-t3 | 31.1 | reload n=1 master=37203 | 1500 | 0 | 2.17 | 2.16 | 3.09 |
+| reload-ossl30-classical-r500-t3 | 61.1 | reload n=2 master=37203 | 1500 | 0 | 2.17 | 2.16 | 3.06 |
+| reload-ossl30-classical-r500-t3 | 91.1 | reload n=3 master=37203 | 1500 | 0 | 2.17 | 2.16 | 3.18 |
+| reload-ossl30-classical-r500-t3 | 121.1 | reload n=4 master=37203 | 1500 | 0 | 2.16 | 2.16 | 3.91 |
+| reload-ossl30-classical-r500-t3 | 151.1 | reload n=5 master=37203 | 1500 | 0 | 2.16 | 2.16 | 3.01 |
+| reload-ossl30-classical-r500-t3 | 181.1 | reload n=6 master=37203 | 1500 | 0 | 2.16 | 2.16 | 3.01 |
+| reload-ossl30-classical-r500-t3 | 211.1 | reload n=7 master=37203 | 1500 | 0 | 2.17 | 2.16 | 2.6 |
+| reload-ossl30-classical-r500-t3 | 241.2 | reload n=8 master=37203 | 1500 | 0 | 2.18 | 2.16 | 4.85 |
+| reload-ossl30-classical-r500-t3 | 271.2 | reload n=9 master=37203 | 1500 | 0 | 2.17 | 2.16 | 4.91 |
+| reload-ossl35-pq-r500-t1 | 31.2 | reload n=1 master=28778 | 1500 | 0 | 2.27 | 2.3 | 3.43 |
+| reload-ossl35-pq-r500-t1 | 61.2 | reload n=2 master=28778 | 1500 | 0 | 2.33 | 2.3 | 3.23 |
+| reload-ossl35-pq-r500-t1 | 91.2 | reload n=3 master=28778 | 1500 | 0 | 2.34 | 2.3 | 3.28 |
+| reload-ossl35-pq-r500-t1 | 121.2 | reload n=4 master=28778 | 1500 | 0 | 2.33 | 2.3 | 4.82 |
+| reload-ossl35-pq-r500-t1 | 151.2 | reload n=5 master=28778 | 1500 | 0 | 2.33 | 2.3 | 4.19 |
+| reload-ossl35-pq-r500-t1 | 181.2 | reload n=6 master=28778 | 1500 | 0 | 2.31 | 2.3 | 3.68 |
+| reload-ossl35-pq-r500-t1 | 211.2 | reload n=7 master=28778 | 1500 | 0 | 2.3 | 2.3 | 3.3 |
+| reload-ossl35-pq-r500-t1 | 241.2 | reload n=8 master=28778 | 1500 | 0 | 2.31 | 2.3 | 4.32 |
+| reload-ossl35-pq-r500-t1 | 271.2 | reload n=9 master=28778 | 1500 | 0 | 2.31 | 2.3 | 4.26 |
+| reload-ossl35-pq-r500-t2 | 31.1 | reload n=1 master=35095 | 1500 | 0 | 2.27 | 2.29 | 2.66 |
+| reload-ossl35-pq-r500-t2 | 61.1 | reload n=2 master=35095 | 1500 | 0 | 2.27 | 2.29 | 3.9 |
+| reload-ossl35-pq-r500-t2 | 91.1 | reload n=3 master=35095 | 1500 | 0 | 2.28 | 2.29 | 3.07 |
+| reload-ossl35-pq-r500-t2 | 121.2 | reload n=4 master=35095 | 1500 | 0 | 2.29 | 2.29 | 3.68 |
+| reload-ossl35-pq-r500-t2 | 151.2 | reload n=5 master=35095 | 1500 | 0 | 2.27 | 2.29 | 3.9 |
+| reload-ossl35-pq-r500-t2 | 181.2 | reload n=6 master=35095 | 1500 | 0 | 2.29 | 2.29 | 2.86 |
+| reload-ossl35-pq-r500-t2 | 211.2 | reload n=7 master=35095 | 1500 | 0 | 2.31 | 2.29 | 2.98 |
+| reload-ossl35-pq-r500-t2 | 241.2 | reload n=8 master=35095 | 1500 | 0 | 2.33 | 2.29 | 3.6 |
+| reload-ossl35-pq-r500-t2 | 271.2 | reload n=9 master=35095 | 1500 | 0 | 2.29 | 2.29 | 3.98 |
+| reload-ossl35-pq-r500-t3 | 31.4 | reload n=1 master=39358 | 1500 | 0 | 2.28 | 2.28 | 3.0 |
+| reload-ossl35-pq-r500-t3 | 61.5 | reload n=2 master=39358 | 1500 | 0 | 2.29 | 2.28 | 3.98 |
+| reload-ossl35-pq-r500-t3 | 91.5 | reload n=3 master=39358 | 1500 | 0 | 2.28 | 2.28 | 3.97 |
+| reload-ossl35-pq-r500-t3 | 121.5 | reload n=4 master=39358 | 1500 | 0 | 2.32 | 2.28 | 3.71 |
+| reload-ossl35-pq-r500-t3 | 151.5 | reload n=5 master=39358 | 1500 | 0 | 2.29 | 2.28 | 5.04 |
+| reload-ossl35-pq-r500-t3 | 181.5 | reload n=6 master=39358 | 1500 | 0 | 2.28 | 2.28 | 3.22 |
+| reload-ossl35-pq-r500-t3 | 211.5 | reload n=7 master=39358 | 1500 | 0 | 2.28 | 2.28 | 5.02 |
+| reload-ossl35-pq-r500-t3 | 241.5 | reload n=8 master=39358 | 1500 | 0 | 2.27 | 2.28 | 2.96 |
+| reload-ossl35-pq-r500-t3 | 271.5 | reload n=9 master=39358 | 1500 | 0 | 2.3 | 2.28 | 4.03 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 31.2 | usr2 old_master=45903 | 1500 | 0 | 2.29 | 2.25 | 2.6 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 37.7 | winch old_master=45903 | 1500 | 0 | 2.3 | 2.25 | 3.0 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 67.7 | hup old_master=45903 (old workers respawn with old binary+config) | 1500 | 0 | 2.27 | 2.25 | 3.25 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 70.7 | quit new_master=46211 | 1500 | 0 | 2.17 | 2.25 | 2.83 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 31.7 | usr2 old_master=46926 | 1500 | 0 | 2.36 | 2.27 | 3.84 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 38.2 | winch old_master=46926 | 1500 | 0 | 2.3 | 2.27 | 2.55 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 68.2 | hup old_master=46926 (old workers respawn with old binary+config) | 1500 | 0 | 2.3 | 2.27 | 2.76 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 71.2 | quit new_master=47243 | 1500 | 0 | 2.18 | 2.27 | 2.41 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 31.2 | usr2 old_master=47943 | 1500 | 0 | 2.35 | 2.26 | 3.06 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 37.7 | winch old_master=47943 | 1500 | 0 | 2.27 | 2.26 | 3.03 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 67.7 | hup old_master=47943 (old workers respawn with old binary+config) | 1500 | 0 | 2.27 | 2.26 | 3.68 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 70.7 | quit new_master=48248 | 1500 | 0 | 2.17 | 2.26 | 3.1 |
+| swap-ossl30-classical-r500-t1 | 31.9 | usr2 old_master=41491 | 1500 | 0 | 2.27 | 2.27 | 3.53 |
+| swap-ossl30-classical-r500-t1 | 38.4 | winch old_master=41491 | 1500 | 0 | 2.26 | 2.27 | 3.81 |
+| swap-ossl30-classical-r500-t1 | 48.4 | quit old_master=41491 | 1500 | 0 | 2.26 | 2.27 | 3.72 |
+| swap-ossl30-classical-r500-t1 | 93.4 | usr2 old_master=41803 (naive) | 1500 | 0 | 2.29 | 2.27 | 2.58 |
+| swap-ossl30-classical-r500-t1 | 140.0 | usr2 old_master=41803 | 1500 | 0 | 2.27 | 2.27 | 3.75 |
+| swap-ossl30-classical-r500-t1 | 146.5 | winch old_master=41803 | 1500 | 0 | 2.2 | 2.27 | 3.61 |
+| swap-ossl30-classical-r500-t1 | 156.5 | quit old_master=41803 | 1500 | 0 | 2.2 | 2.27 | 3.1 |
+| swap-ossl30-classical-r500-t2 | 31.7 | usr2 old_master=42965 | 1500 | 0 | 2.34 | 2.29 | 5.85 |
+| swap-ossl30-classical-r500-t2 | 38.2 | winch old_master=42965 | 1500 | 0 | 2.3 | 2.29 | 3.12 |
+| swap-ossl30-classical-r500-t2 | 48.2 | quit old_master=42965 | 1500 | 0 | 2.31 | 2.29 | 3.43 |
+| swap-ossl30-classical-r500-t2 | 93.3 | usr2 old_master=43301 (naive) | 1500 | 0 | 2.29 | 2.29 | 3.83 |
+| swap-ossl30-classical-r500-t2 | 139.8 | usr2 old_master=43301 | 1500 | 0 | 2.32 | 2.29 | 3.87 |
+| swap-ossl30-classical-r500-t2 | 146.4 | winch old_master=43301 | 1500 | 0 | 2.2 | 2.29 | 3.57 |
+| swap-ossl30-classical-r500-t2 | 156.4 | quit old_master=43301 | 1500 | 0 | 2.19 | 2.29 | 3.37 |
+| swap-ossl30-classical-r500-t3 | 31.1 | usr2 old_master=44468 | 1500 | 0 | 2.37 | 2.29 | 2.92 |
+| swap-ossl30-classical-r500-t3 | 37.6 | winch old_master=44468 | 1500 | 0 | 2.27 | 2.29 | 3.56 |
+| swap-ossl30-classical-r500-t3 | 47.6 | quit old_master=44468 | 1500 | 0 | 2.28 | 2.29 | 3.5 |
+| swap-ossl30-classical-r500-t3 | 92.7 | usr2 old_master=44776 (naive) | 1500 | 0 | 2.3 | 2.29 | 3.19 |
+| swap-ossl30-classical-r500-t3 | 139.2 | usr2 old_master=44776 | 1500 | 0 | 2.38 | 2.29 | 3.21 |
+| swap-ossl30-classical-r500-t3 | 145.8 | winch old_master=44776 | 1500 | 0 | 2.18 | 2.29 | 3.46 |
+| swap-ossl30-classical-r500-t3 | 155.8 | quit old_master=44776 | 1500 | 0 | 2.18 | 2.29 | 2.67 |
+
+
+wrote results/summary.md, runs.csv, events.csv, ladder.csv/png and <run>/timeline.png

@@ -1,0 +1,10 @@
+1794129075.286272306 start arm=ossl30 profile=classical master=45903 openssl=3.0.13
+1794129116.089080594 swap_begin to=ossl35 profile=pq old_master=45903 (fast-rollback variant)
+1794129116.120593002 usr2 old_master=45903
+1794129117.634934526 new_master_up new_master=46211
+1794129122.640644485 winch old_master=45903
+1794129152.644014923 fast_rollback_begin
+1794129152.648549260 hup old_master=45903 (old workers respawn with old binary+config)
+1794129155.655021188 quit new_master=46211
+1794129155.676039214 fast_rollback_done master=45903 (on-disk config+binary restored to match)
+1794129155.678561233 events_done swap-fast-rollback

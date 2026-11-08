@@ -1,0 +1,2 @@
+{"scenario": "idle", "arm": "ossl35", "profile": "pq", "rate": 0, "trial": "1",
+ "duration_s": 60, "warm_s": 30, "finished_utc": "2026-11-08T07:50:45Z"}

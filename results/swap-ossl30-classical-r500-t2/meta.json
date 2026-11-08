@@ -1,0 +1,2 @@
+{"scenario": "swap", "arm": "ossl30", "profile": "classical", "rate": 500, "trial": "2",
+ "duration_s": 180, "warm_s": 30, "finished_utc": "2026-11-08T09:06:11Z"}

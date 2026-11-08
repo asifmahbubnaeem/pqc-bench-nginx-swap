@@ -1,0 +1,3 @@
+arm,binary_bytes,stripped_bytes,shared_ssl_libs_bytes,tls_total_bytes,shared_lib_count,openssl
+ossl30,5344504,1200408,5400656,6601064,6,3.0.13
+ossl35,12711424,7646488,0,7646488,4,3.5.2

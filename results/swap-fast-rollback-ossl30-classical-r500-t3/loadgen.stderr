@@ -1,0 +1,12 @@
+==> https://172.31.1.186/  rate=500/s  duration=1m45s  groups=default
+    t= 10s ok=5000 err=0 dropped=0
+    t= 20s ok=10000 err=0 dropped=0
+    t= 30s ok=15001 err=0 dropped=0
+    t= 40s ok=20001 err=0 dropped=0
+    t= 50s ok=25001 err=0 dropped=0
+    t= 60s ok=30001 err=0 dropped=0
+    t= 70s ok=35002 err=0 dropped=0
+    t= 80s ok=40002 err=0 dropped=0
+    t= 90s ok=45002 err=0 dropped=0
+    t=100s ok=50002 err=0 dropped=0
+==> done: ok=52501 err=0 dropped=0  p50=1.60ms p99=2.25ms p999=2.73ms  -> runs/swap-fast-rollback-ossl30-classical-r500-t3/loadgen.csv

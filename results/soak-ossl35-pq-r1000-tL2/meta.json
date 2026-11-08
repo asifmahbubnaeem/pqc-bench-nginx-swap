@@ -1,0 +1,2 @@
+{"scenario": "soak", "arm": "ossl35", "profile": "pq", "rate": 1000, "trial": "L2",
+ "duration_s": 60, "warm_s": 30, "finished_utc": "2026-11-08T12:23:49Z"}

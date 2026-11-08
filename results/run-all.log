@@ -1,0 +1,515 @@
+arm,binary_bytes,stripped_bytes,shared_ssl_libs_bytes,tls_total_bytes,shared_lib_count,openssl
+ossl30,5344504,1200408,5400656,6601064,6,3.0.13
+ossl35,12711424,7646488,0,7646488,4,3.5.2
+==> idle-ossl30-classical-r0-t1  (duration 60s, rate 0/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794124040.307774649 start arm=ossl30 profile=classical master=25286 openssl=3.0.13
+    [target] 1794124050.497572308 events_done idle
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/idle-ossl30-classical-r0-t1
+==> idle-ossl35-pq-r0-t1  (duration 60s, rate 0/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794124145.066779835 start arm=ossl35 profile=pq master=25985 openssl=3.5.2
+    [target] 1794124155.687478538 events_done idle
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/idle-ossl35-pq-r0-t1
+==> reload-ossl30-classical-r500-t1  (duration 315s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794124250.855517744 start arm=ossl30 profile=classical master=26689 openssl=3.0.13
+    [target] 1794124291.893216557 reload n=1 master=26689
+    [target] 1794124321.904524002 reload n=2 master=26689
+    [target] 1794124351.915409508 reload n=3 master=26689
+    [target] 1794124381.927084606 reload n=4 master=26689
+    [target] 1794124411.938928897 reload n=5 master=26689
+    [target] 1794124441.949357810 reload n=6 master=26689
+    [target] 1794124471.961975629 reload n=7 master=26689
+    [target] 1794124501.972680218 reload n=8 master=26689
+    [target] 1794124531.983329591 reload n=9 master=26689
+    [target] 1794124561.992521393 events_done reload
+    t=300s ok=150016 err=0 dropped=0
+    t=310s ok=155016 err=0 dropped=0
+==> done: ok=157501 err=0 dropped=0  p50=1.59ms p99=2.17ms p999=2.81ms  -> runs/reload-ossl30-classical-r500-t1/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/reload-ossl30-classical-r500-t1
+==> reload-ossl35-pq-r500-t1  (duration 315s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794124677.974269422 start arm=ossl35 profile=pq master=28778 openssl=3.5.2
+    [target] 1794124718.696845642 reload n=1 master=28778
+    [target] 1794124748.706706170 reload n=2 master=28778
+    [target] 1794124778.717623042 reload n=3 master=28778
+    [target] 1794124808.729826148 reload n=4 master=28778
+    [target] 1794124838.741515035 reload n=5 master=28778
+    [target] 1794124868.751577835 reload n=6 master=28778
+    [target] 1794124898.762953573 reload n=7 master=28778
+    [target] 1794124928.775058625 reload n=8 master=28778
+    [target] 1794124958.786765336 reload n=9 master=28778
+    [target] 1794124988.795451210 events_done reload
+    t=300s ok=150018 err=0 dropped=0
+    t=310s ok=155018 err=0 dropped=0
+==> done: ok=157501 err=0 dropped=0  p50=1.68ms p99=2.30ms p999=3.03ms  -> runs/reload-ossl35-pq-r500-t1/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/reload-ossl35-pq-r500-t1
+==> reload-ossl30-classical-r500-t2  (duration 315s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794125133.239978580 start arm=ossl30 profile=classical master=30865 openssl=3.0.13
+    [target] 1794125175.607982293 reload n=1 master=30865
+    [target] 1794125205.620085802 reload n=2 master=30865
+    [target] 1794125235.631349744 reload n=3 master=30865
+    [target] 1794125265.643344624 reload n=4 master=30865
+    [target] 1794125295.656557522 reload n=5 master=30865
+    [target] 1794125325.668996148 reload n=6 master=30865
+    [target] 1794125355.681006149 reload n=7 master=30865
+    [target] 1794125385.695655590 reload n=8 master=30865
+    [target] 1794125415.708188927 reload n=9 master=30865
+    [target] 1794125445.717755287 events_done reload
+    t=300s ok=150018 err=0 dropped=0
+    t=310s ok=155018 err=0 dropped=0
+==> done: ok=157501 err=0 dropped=0  p50=1.60ms p99=2.18ms p999=2.96ms  -> runs/reload-ossl30-classical-r500-t2/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/reload-ossl30-classical-r500-t2
+==> reload-ossl35-pq-r500-t2  (duration 315s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794125623.139137315 start arm=ossl35 profile=pq master=32949 openssl=3.5.2
+    [target] 1794125664.692496515 reload n=1 master=32949
+    [target] 1794125694.702811328 reload n=2 master=32949
+    [target] 1794125724.713613690 reload n=3 master=32949
+    [target] 1794125754.724219949 reload n=4 master=32949
+    [target] 1794125784.733892279 reload n=5 master=32949
+    [target] 1794125814.743315750 reload n=6 master=32949
+    [target] 1794125844.752702093 reload n=7 master=32949
+    [target] 1794125874.761939016 reload n=8 master=32949
+    [target] 1794125904.772207281 reload n=9 master=32949
+    [target] 1794125934.780491853 events_done reload
+Connection to 100.24.116.119 port 22 timed out
+skip idle-ossl30-classical-r0-t1 (done)
+skip idle-ossl35-pq-r0-t1 (done)
+skip reload-ossl30-classical-r500-t1 (done)
+skip reload-ossl35-pq-r500-t1 (done)
+skip reload-ossl30-classical-r500-t2 (done)
+==> reload-ossl35-pq-r500-t2  (duration 315s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794126595.429781431 start arm=ossl35 profile=pq master=35095 openssl=3.5.2
+    [target] 1794126636.141625242 reload n=1 master=35095
+    [target] 1794126666.151443804 reload n=2 master=35095
+    [target] 1794126696.161448107 reload n=3 master=35095
+    [target] 1794126726.171520473 reload n=4 master=35095
+    [target] 1794126756.181299555 reload n=5 master=35095
+    [target] 1794126786.191578470 reload n=6 master=35095
+    [target] 1794126816.201211273 reload n=7 master=35095
+    [target] 1794126846.211077722 reload n=8 master=35095
+    [target] 1794126876.221424444 reload n=9 master=35095
+    [target] 1794126906.229982231 events_done reload
+    t=300s ok=150013 err=0 dropped=0
+    t=310s ok=155013 err=0 dropped=0
+==> done: ok=157501 err=0 dropped=0  p50=1.66ms p99=2.28ms p999=2.70ms  -> runs/reload-ossl35-pq-r500-t2/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/reload-ossl35-pq-r500-t2
+==> reload-ossl30-classical-r500-t3  (duration 315s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794127042.822492264 start arm=ossl30 profile=classical master=37203 openssl=3.0.13
+    [target] 1794127083.844936279 reload n=1 master=37203
+    [target] 1794127113.855724248 reload n=2 master=37203
+    [target] 1794127143.867013313 reload n=3 master=37203
+    [target] 1794127173.878885537 reload n=4 master=37203
+    [target] 1794127203.889553865 reload n=5 master=37203
+    [target] 1794127233.900750776 reload n=6 master=37203
+    [target] 1794127263.912140653 reload n=7 master=37203
+    [target] 1794127293.923579711 reload n=8 master=37203
+    [target] 1794127323.935272280 reload n=9 master=37203
+    [target] 1794127353.944954357 events_done reload
+    t=300s ok=150019 err=0 dropped=0
+    t=310s ok=155020 err=0 dropped=0
+==> done: ok=157501 err=0 dropped=0  p50=1.58ms p99=2.16ms p999=2.66ms  -> runs/reload-ossl30-classical-r500-t3/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/reload-ossl30-classical-r500-t3
+==> reload-ossl35-pq-r500-t3  (duration 315s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794127485.205321141 start arm=ossl35 profile=pq master=39358 openssl=3.5.2
+    [target] 1794127526.623539532 reload n=1 master=39358
+    [target] 1794127556.634759535 reload n=2 master=39358
+    [target] 1794127586.644266602 reload n=3 master=39358
+    [target] 1794127616.654047589 reload n=4 master=39358
+    [target] 1794127646.665570942 reload n=5 master=39358
+    [target] 1794127676.675732941 reload n=6 master=39358
+    [target] 1794127706.685557001 reload n=7 master=39358
+    [target] 1794127736.695561765 reload n=8 master=39358
+    [target] 1794127766.705099019 reload n=9 master=39358
+    [target] 1794127796.713871751 events_done reload
+    t=300s ok=150017 err=0 dropped=0
+    t=310s ok=155017 err=0 dropped=0
+==> done: ok=157501 err=0 dropped=0  p50=1.67ms p99=2.28ms p999=2.93ms  -> runs/reload-ossl35-pq-r500-t3/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/reload-ossl35-pq-r500-t3
+==> swap-ossl30-classical-r500-t1  (duration 180s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794127989.816493749 start arm=ossl30 profile=classical master=41491 openssl=3.0.13
+    [target] 1794128032.480811072 swap_begin to=ossl35 profile=pq old_master=41491
+    [target] 1794128032.516228454 usr2 old_master=41491
+    [target] 1794128034.029325503 new_master_up new_master=41803
+    [target] 1794128039.034090120 winch old_master=41491
+    [target] 1794128049.038105716 quit old_master=41491
+    [target] 1794128049.044730172 swap_done master=41803
+    [target] 1794128094.047742837 naive_rollback_begin (binary→ossl30, config left as pq)
+    [target] 1794128094.070929350 naive_t_failed nginx: [emerg] SSL_CTX_set1_curves_list("X25519MLKEM768:X25519:prime256v1") failed (SSL: error:0A080106:SSL routines::passed invalid argument:group 'X25519MLKEM
+    [target] 1794128094.075149285 usr2 old_master=41803 (naive)
+    [target] 1794128095.580229048 naive_rollback_failed: new master exited, old master 41803 still serving (3 emerg lines in error.log)
+    [target] 1794128140.610932529 swap_begin to=ossl30 profile=classical old_master=41803
+    [target] 1794128140.634209089 usr2 old_master=41803
+    [target] 1794128142.147327209 new_master_up new_master=42407
+    [target] 1794128147.153840074 winch old_master=41803
+    [target] 1794128157.158085638 quit old_master=41803
+    [target] 1794128157.164755800 swap_done master=42407
+    [target] 1794128157.166441609 events_done swap
+    t=160s ok=80009 err=0 dropped=0
+    t=170s ok=85010 err=0 dropped=0
+==> done: ok=90001 err=0 dropped=0  p50=1.64ms p99=2.26ms p999=2.71ms  -> runs/swap-ossl30-classical-r500-t1/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/swap-ossl30-classical-r500-t1
+==> swap-ossl30-classical-r500-t2  (duration 180s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794128302.482961418 start arm=ossl30 profile=classical master=42965 openssl=3.0.13
+    [target] 1794128351.261075727 swap_begin to=ossl35 profile=pq old_master=42965
+    [target] 1794128351.297180254 usr2 old_master=42965
+    [target] 1794128352.811027608 new_master_up new_master=43301
+    [target] 1794128357.816445459 winch old_master=42965
+    [target] 1794128367.820748712 quit old_master=42965
+    [target] 1794128367.826698244 swap_done master=43301
+    [target] 1794128412.830111481 naive_rollback_begin (binary→ossl30, config left as pq)
+    [target] 1794128412.853840151 naive_t_failed nginx: [emerg] SSL_CTX_set1_curves_list("X25519MLKEM768:X25519:prime256v1") failed (SSL: error:0A080106:SSL routines::passed invalid argument:group 'X25519MLKEM
+    [target] 1794128412.857228113 usr2 old_master=43301 (naive)
+    [target] 1794128414.363143076 naive_rollback_failed: new master exited, old master 43301 still serving (3 emerg lines in error.log)
+    [target] 1794128459.393880964 swap_begin to=ossl30 profile=classical old_master=43301
+    [target] 1794128459.422634654 usr2 old_master=43301
+    [target] 1794128460.936584740 new_master_up new_master=43906
+    [target] 1794128465.941840127 winch old_master=43301
+    [target] 1794128475.948714411 quit old_master=43301
+    [target] 1794128475.955056822 swap_done master=43906
+    [target] 1794128475.957549930 events_done swap
+    t=160s ok=80009 err=0 dropped=0
+    t=170s ok=85010 err=0 dropped=0
+==> done: ok=90001 err=0 dropped=0  p50=1.65ms p99=2.29ms p999=2.75ms  -> runs/swap-ossl30-classical-r500-t2/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/swap-ossl30-classical-r500-t2
+==> swap-ossl30-classical-r500-t3  (duration 180s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794128776.570209152 start arm=ossl30 profile=classical master=44468 openssl=3.0.13
+    [target] 1794128817.850673656 swap_begin to=ossl35 profile=pq old_master=44468
+    [target] 1794128817.884717511 usr2 old_master=44468
+    [target] 1794128819.399068796 new_master_up new_master=44776
+    [target] 1794128824.404922159 winch old_master=44468
+    [target] 1794128834.409973959 quit old_master=44468
+    [target] 1794128834.416574160 swap_done master=44776
+    [target] 1794128879.421117540 naive_rollback_begin (binary→ossl30, config left as pq)
+    [target] 1794128879.445221952 naive_t_failed nginx: [emerg] SSL_CTX_set1_curves_list("X25519MLKEM768:X25519:prime256v1") failed (SSL: error:0A080106:SSL routines::passed invalid argument:group 'X25519MLKEM
+    [target] 1794128879.448192131 usr2 old_master=44776 (naive)
+    [target] 1794128880.953306071 naive_rollback_failed: new master exited, old master 44776 still serving (3 emerg lines in error.log)
+    [target] 1794128925.984539800 swap_begin to=ossl30 profile=classical old_master=44776
+    [target] 1794128926.010234790 usr2 old_master=44776
+    [target] 1794128927.526208028 new_master_up new_master=45374
+    [target] 1794128932.531307784 winch old_master=44776
+    [target] 1794128942.536209143 quit old_master=44776
+    [target] 1794128942.543041965 swap_done master=45374
+    [target] 1794128942.545261886 events_done swap
+    t=160s ok=80011 err=0 dropped=0
+    t=170s ok=85012 err=0 dropped=0
+==> done: ok=90001 err=0 dropped=0  p50=1.64ms p99=2.28ms p999=2.62ms  -> runs/swap-ossl30-classical-r500-t3/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/swap-ossl30-classical-r500-t3
+==> swap-fast-rollback-ossl30-classical-r500-t1  (duration 105s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794129075.286272306 start arm=ossl30 profile=classical master=45903 openssl=3.0.13
+    [target] 1794129116.089080594 swap_begin to=ossl35 profile=pq old_master=45903 (fast-rollback variant)
+    [target] 1794129116.120593002 usr2 old_master=45903
+    [target] 1794129117.634934526 new_master_up new_master=46211
+    [target] 1794129122.640644485 winch old_master=45903
+    [target] 1794129152.644014923 fast_rollback_begin
+    [target] 1794129152.648549260 hup old_master=45903 (old workers respawn with old binary+config)
+    [target] 1794129155.655021188 quit new_master=46211
+    [target] 1794129155.676039214 fast_rollback_done master=45903 (on-disk config+binary restored to match)
+    [target] 1794129155.678561233 events_done swap-fast-rollback
+    t= 90s ok=45006 err=0 dropped=0
+    t=100s ok=50007 err=0 dropped=0
+==> done: ok=52501 err=0 dropped=0  p50=1.60ms p99=2.24ms p999=2.65ms  -> runs/swap-fast-rollback-ossl30-classical-r500-t1/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/swap-fast-rollback-ossl30-classical-r500-t1
+==> swap-fast-rollback-ossl30-classical-r500-t2  (duration 105s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794129421.484807270 start arm=ossl30 profile=classical master=46926 openssl=3.0.13
+    [target] 1794129463.137800395 swap_begin to=ossl35 profile=pq old_master=46926 (fast-rollback variant)
+    [target] 1794129463.170336345 usr2 old_master=46926
+    [target] 1794129464.683541498 new_master_up new_master=47243
+    [target] 1794129469.689502702 winch old_master=46926
+    [target] 1794129499.693632795 fast_rollback_begin
+    [target] 1794129499.695913961 hup old_master=46926 (old workers respawn with old binary+config)
+    [target] 1794129502.702238062 quit new_master=47243
+    [target] 1794129502.724607405 fast_rollback_done master=46926 (on-disk config+binary restored to match)
+    [target] 1794129502.726700562 events_done swap-fast-rollback
+    t= 90s ok=45004 err=0 dropped=0
+    t=100s ok=50005 err=0 dropped=0
+==> done: ok=52501 err=0 dropped=0  p50=1.62ms p99=2.27ms p999=2.59ms  -> runs/swap-fast-rollback-ossl30-classical-r500-t2/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/swap-fast-rollback-ossl30-classical-r500-t2
+==> swap-fast-rollback-ossl30-classical-r500-t3  (duration 105s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794129647.334938360 start arm=ossl30 profile=classical master=47943 openssl=3.0.13
+    [target] 1794129688.422118360 swap_begin to=ossl35 profile=pq old_master=47943 (fast-rollback variant)
+    [target] 1794129688.453267457 usr2 old_master=47943
+    [target] 1794129689.967824703 new_master_up new_master=48248
+    [target] 1794129694.973457690 winch old_master=47943
+    [target] 1794129724.976637323 fast_rollback_begin
+    [target] 1794129724.979421155 hup old_master=47943 (old workers respawn with old binary+config)
+    [target] 1794129727.985210197 quit new_master=48248
+    [target] 1794129728.008299532 fast_rollback_done master=47943 (on-disk config+binary restored to match)
+    [target] 1794129728.010178317 events_done swap-fast-rollback
+    t= 90s ok=45002 err=0 dropped=0
+    t=100s ok=50002 err=0 dropped=0
+==> done: ok=52501 err=0 dropped=0  p50=1.60ms p99=2.25ms p999=2.73ms  -> runs/swap-fast-rollback-ossl30-classical-r500-t3/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/swap-fast-rollback-ossl30-classical-r500-t3
+==> soak-ossl30-classical-r500-t1  (duration 600s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794129837.366479592 start arm=ossl30 profile=classical master=48955 openssl=3.0.13
+    [target] 1794129848.364330351 events_done soak
+    t=580s ok=290036 err=0 dropped=0
+    t=590s ok=295037 err=0 dropped=0
+==> done: ok=300001 err=0 dropped=0  p50=1.58ms p99=2.18ms p999=2.74ms  -> runs/soak-ossl30-classical-r500-t1/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl30-classical-r500-t1
+==> soak-ossl35-pq-r500-t1  (duration 600s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794130782.318418914 start arm=ossl35 profile=pq master=52383 openssl=3.5.2
+    [target] 1794130794.489985686 events_done soak
+    t=580s ok=290034 err=0 dropped=0
+    t=590s ok=295034 err=0 dropped=0
+==> done: ok=300001 err=0 dropped=0  p50=1.65ms p99=2.27ms p999=2.80ms  -> runs/soak-ossl35-pq-r500-t1/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl35-pq-r500-t1
+==> soak-ossl30-classical-r500-tladder  (duration 60s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794131758.824090957 start arm=ossl30 profile=classical master=55877 openssl=3.0.13
+    [target] 1794131769.934398172 events_done soak
+    t= 40s ok=20001 err=0 dropped=0
+    t= 50s ok=25002 err=0 dropped=0
+==> done: ok=30001 err=0 dropped=0  p50=1.58ms p99=2.17ms p999=2.56ms  -> runs/soak-ossl30-classical-r500-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl30-classical-r500-tladder
+==> soak-ossl35-classical-r500-tladder  (duration 60s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794131891.525810103 start arm=ossl35 profile=classical master=56607 openssl=3.5.2
+    [target] 1794131902.542283896 events_done soak
+    t= 40s ok=20002 err=0 dropped=0
+    t= 50s ok=25003 err=0 dropped=0
+==> done: ok=30001 err=0 dropped=0  p50=1.54ms p99=2.12ms p999=2.61ms  -> runs/soak-ossl35-classical-r500-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl35-classical-r500-tladder
+==> soak-ossl35-pq-r500-tladder  (duration 60s, rate 500/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794132052.698466489 start arm=ossl35 profile=pq master=57357 openssl=3.5.2
+    [target] 1794132063.513694748 events_done soak
+    t= 40s ok=20001 err=0 dropped=0
+    t= 50s ok=25001 err=0 dropped=0
+==> done: ok=30001 err=0 dropped=0  p50=1.67ms p99=2.29ms p999=2.66ms  -> runs/soak-ossl35-pq-r500-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl35-pq-r500-tladder
+==> soak-ossl30-classical-r1000-tladder  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794132291.802012940 start arm=ossl30 profile=classical master=58096 openssl=3.0.13
+    [target] 1794132317.417724855 events_done soak
+    t= 40s ok=40001 err=0 dropped=0
+    t= 50s ok=50002 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.11ms p99=1.56ms p999=2.59ms  -> runs/soak-ossl30-classical-r1000-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl30-classical-r1000-tladder
+==> soak-ossl35-classical-r1000-tladder  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794132557.083826505 start arm=ossl35 profile=classical master=58893 openssl=3.5.2
+    [target] 1794132572.379815477 events_done soak
+    t= 40s ok=40000 err=0 dropped=0
+    t= 50s ok=50001 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.06ms p99=2.41ms p999=2.63ms  -> runs/soak-ossl35-classical-r1000-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl35-classical-r1000-tladder
+==> soak-ossl35-pq-r1000-tladder  (duration 60s, rate 1000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794132948.021949319 start arm=ossl35 profile=pq master=59668 openssl=3.5.2
+    [target] 1794132966.360912634 events_done soak
+    t= 40s ok=40000 err=0 dropped=0
+    t= 50s ok=50001 err=0 dropped=0
+==> done: ok=60001 err=0 dropped=0  p50=1.34ms p99=1.88ms p999=2.48ms  -> runs/soak-ossl35-pq-r1000-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl35-pq-r1000-tladder
+==> soak-ossl30-classical-r2000-tladder  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794133394.468055638 start arm=ossl30 profile=classical master=60433 openssl=3.0.13
+    [target] 1794133415.109143513 events_done soak
+    t= 40s ok=79999 err=0 dropped=0
+    t= 50s ok=99999 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.32ms p99=1.88ms p999=3.22ms  -> runs/soak-ossl30-classical-r2000-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl30-classical-r2000-tladder
+==> soak-ossl35-classical-r2000-tladder  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794133584.241439498 start arm=ossl35 profile=classical master=61226 openssl=3.5.2
+    [target] 1794133596.088191036 events_done soak
+    t= 40s ok=80001 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.17ms p99=1.76ms p999=3.12ms  -> runs/soak-ossl35-classical-r2000-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl35-classical-r2000-tladder
+==> soak-ossl35-pq-r2000-tladder  (duration 60s, rate 2000/s)
+nginx: the configuration file /opt/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/nginx/conf/nginx.conf test is successful
+1794133767.725536053 start arm=ossl35 profile=pq master=61965 openssl=3.5.2
+    [target] 1794133778.425698995 events_done soak
+    t= 40s ok=80000 err=0 dropped=0
+    t= 50s ok=100000 err=0 dropped=0
+==> done: ok=120001 err=0 dropped=0  p50=1.48ms p99=2.36ms p999=3.70ms  -> runs/soak-ossl35-pq-r2000-tladder/loadgen.csv
+==> results: /home/lenovo/Desktop/Repos/files/pqc-bench-ph7/phase-7/results/soak-ossl35-pq-r2000-tladder
+# Phase 7 results
+
+## Static footprint
+
+`build/build.csv`
+
+| arm | configure_s | make_s | total_s | binary_bytes | stripped_bytes | openssl |
+|---|---|---|---|---|---|---|
+| ossl30 | 4.3 | 15.7 | 20.1 | 5344504 | 1200408 | 3.0.13 |
+| ossl35 | 4.2 | 117.7 | 121.9 | 12711424 | 7646488 | 3.5.2 |
+
+`footprint/footprint.csv`
+
+| arm | binary_bytes | stripped_bytes | shared_ssl_libs_bytes | tls_total_bytes | shared_lib_count | openssl |
+|---|---|---|---|---|---|---|
+| ossl30 | 5344504 | 1200408 | 5400656 | 6601064 | 6 | 3.0.13 |
+| ossl35 | 12711424 | 7646488 | 0 | 7646488 | 4 | 3.5.2 |
+
+## Idle memory
+
+| arm | profile | rss_total_mb_med | rss_master_mb_max | rss_worker_mb_max |
+|---|---|---|---|---|
+| ossl30 | classical | 23.5 | 2.0 | 10.8 |
+| ossl35 | pq | 24.1 | 2.3 | 10.9 |
+
+## Runs under load
+
+| scenario | arm | profile | rate | trial | requests | errors | error_pct | error_kinds | req_p50 | req_p99 | req_p999 | tls_p50 | tls_p99 | quiet_p99 | cpu_busy_med_pct | rss_total_mb_med | rss_worker_mb_max | rss_slope_mb_per_h | pq_share_pct | worker_pids_seen |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| reload | ossl30 | classical | 500 | 1 | 157501 | 0 | 0.0 |  | 1.59 | 2.17 | 2.81 | 0.72 | 0.84 | 2.17 | 12.1 | 34.1 | 14.1 |  | 0.0 | 20 |
+| reload | ossl30 | classical | 500 | 2 | 157501 | 0 | 0.0 |  | 1.6 | 2.18 | 2.96 | 0.73 | 0.86 | 2.18 | 12.1 | 34.1 | 14.1 |  | 0.0 | 20 |
+| reload | ossl30 | classical | 500 | 3 | 157501 | 0 | 0.0 |  | 1.58 | 2.16 | 2.66 | 0.72 | 0.84 | 2.16 | 11.2 | 34.0 | 14.1 |  | 0.0 | 20 |
+| reload | ossl35 | pq | 500 | 1 | 157501 | 0 | 0.0 |  | 1.68 | 2.3 | 3.03 | 0.83 | 0.98 | 2.3 | 11.4 | 35.5 | 14.7 |  | 100.0 | 20 |
+| reload | ossl35 | pq | 500 | 2 | 157501 | 0 | 0.0 |  | 1.66 | 2.28 | 2.7 | 0.82 | 0.96 | 2.29 | 13.4 | 35.5 | 14.7 |  | 100.0 | 20 |
+| reload | ossl35 | pq | 500 | 3 | 157501 | 0 | 0.0 |  | 1.67 | 2.28 | 2.94 | 0.82 | 0.96 | 2.28 | 10.7 | 35.5 | 14.7 |  | 100.0 | 20 |
+| soak | ossl30 | classical | 1000 | ladder | 60001 | 0 | 0.0 |  | 1.11 | 1.56 | 2.59 | 0.73 | 0.94 | 1.55 | 40.2 | 30.1 | 14.1 | 146.22 | 0.0 | 2 |
+| soak | ossl30 | classical | 2000 | ladder | 120001 | 0 | 0.0 |  | 1.32 | 1.88 | 3.22 | 0.76 | 1.07 | 1.89 | 48.9 | 30.2 | 14.1 | 279.71 | 0.0 | 2 |
+| soak | ossl30 | classical | 500 | 1 | 300001 | 0 | 0.0 |  | 1.58 | 2.18 | 2.74 | 0.72 | 0.82 | 2.18 | 11.6 | 30.0 | 14.0 | 2.08 | 0.0 | 2 |
+| soak | ossl30 | classical | 500 | ladder | 30001 | 0 | 0.0 |  | 1.58 | 2.17 | 2.56 | 0.72 | 0.86 | 2.17 | 12.4 | 30.0 | 14.0 | 112.54 | 0.0 | 2 |
+| soak | ossl35 | classical | 1000 | ladder | 60001 | 0 | 0.0 |  | 1.06 | 2.41 | 2.63 | 0.68 | 0.96 | 2.41 | 23.4 | 31.5 | 14.6 | 227.92 | 0.0 | 2 |
+| soak | ossl35 | classical | 2000 | ladder | 120001 | 0 | 0.0 |  | 1.17 | 1.76 | 3.12 | 0.69 | 1.0 | 1.76 | 39.0 | 31.6 | 14.7 | 161.53 | 0.0 | 2 |
+| soak | ossl35 | classical | 500 | ladder | 30001 | 0 | 0.0 |  | 1.54 | 2.12 | 2.61 | 0.67 | 0.79 | 2.12 | 10.1 | 31.3 | 14.6 | 124.81 | 0.0 | 2 |
+| soak | ossl35 | pq | 1000 | ladder | 60001 | 0 | 0.0 |  | 1.34 | 1.88 | 2.48 | 0.81 | 1.01 | 1.87 | 14.0 | 31.6 | 14.7 | 176.77 | 100.0 | 2 |
+| soak | ossl35 | pq | 2000 | ladder | 120001 | 0 | 0.0 |  | 1.48 | 2.36 | 3.7 | 0.9 | 1.31 | 2.35 | 43.5 | 31.9 | 14.8 | 136.24 | 100.0 | 2 |
+| soak | ossl35 | pq | 500 | 1 | 300001 | 0 | 0.0 |  | 1.65 | 2.27 | 2.8 | 0.82 | 0.92 | 2.27 | 10.2 | 31.5 | 14.6 | 2.29 | 100.0 | 2 |
+| soak | ossl35 | pq | 500 | ladder | 30001 | 0 | 0.0 |  | 1.67 | 2.29 | 2.66 | 0.83 | 0.99 | 2.29 | 14.2 | 31.5 | 14.6 | 159.55 | 100.0 | 2 |
+| swap-fast-rollback | ossl30 | classical | 500 | 1 | 52501 | 0 | 0.0 |  | 1.6 | 2.24 | 2.65 | 0.74 | 0.93 | 2.25 | 11.1 | 30.3 | 14.7 |  | 33.3 | 6 |
+| swap-fast-rollback | ossl30 | classical | 500 | 2 | 52501 | 0 | 0.0 |  | 1.62 | 2.27 | 2.59 | 0.74 | 0.94 | 2.27 | 13.9 | 30.3 | 14.6 |  | 33.1 | 6 |
+| swap-fast-rollback | ossl30 | classical | 500 | 3 | 52501 | 0 | 0.0 |  | 1.6 | 2.25 | 2.74 | 0.74 | 0.93 | 2.26 | 11.7 | 30.4 | 14.6 |  | 33.1 | 6 |
+| swap | ossl30 | classical | 500 | 1 | 90001 | 0 | 0.0 |  | 1.64 | 2.26 | 2.71 | 0.81 | 0.92 | 2.27 | 13.7 | 37.1 | 14.6 |  | 60.0 | 6 |
+| swap | ossl30 | classical | 500 | 2 | 90001 | 0 | 0.0 |  | 1.65 | 2.29 | 2.75 | 0.81 | 0.95 | 2.29 | 14.2 | 37.1 | 14.7 |  | 60.0 | 6 |
+| swap | ossl30 | classical | 500 | 3 | 90001 | 0 | 0.0 |  | 1.64 | 2.28 | 2.63 | 0.81 | 0.95 | 2.29 | 11.7 | 37.1 | 14.6 |  | 60.1 | 6 |
+
+## Event windows (3 s after each signal)
+
+| run | t_rel_s | event | requests | errors | p99_ms | quiet_p99_ms | max_ms |
+|---|---|---|---|---|---|---|---|
+| reload-ossl30-classical-r500-t1 | 30.9 | reload n=1 master=26689 | 1500 | 0 | 2.18 | 2.17 | 5.47 |
+| reload-ossl30-classical-r500-t1 | 60.9 | reload n=2 master=26689 | 1500 | 0 | 2.2 | 2.17 | 6.37 |
+| reload-ossl30-classical-r500-t1 | 90.9 | reload n=3 master=26689 | 1500 | 0 | 2.2 | 2.17 | 3.53 |
+| reload-ossl30-classical-r500-t1 | 120.9 | reload n=4 master=26689 | 1500 | 0 | 2.17 | 2.17 | 4.05 |
+| reload-ossl30-classical-r500-t1 | 150.9 | reload n=5 master=26689 | 1500 | 0 | 2.22 | 2.17 | 3.2 |
+| reload-ossl30-classical-r500-t1 | 180.9 | reload n=6 master=26689 | 1500 | 0 | 2.21 | 2.17 | 10.3 |
+| reload-ossl30-classical-r500-t1 | 210.9 | reload n=7 master=26689 | 1500 | 0 | 2.18 | 2.17 | 3.89 |
+| reload-ossl30-classical-r500-t1 | 240.9 | reload n=8 master=26689 | 1500 | 0 | 2.19 | 2.17 | 6.42 |
+| reload-ossl30-classical-r500-t1 | 270.9 | reload n=9 master=26689 | 1500 | 0 | 2.16 | 2.17 | 3.14 |
+| reload-ossl30-classical-r500-t2 | 30.8 | reload n=1 master=30865 | 1500 | 0 | 2.17 | 2.18 | 3.11 |
+| reload-ossl30-classical-r500-t2 | 60.8 | reload n=2 master=30865 | 1500 | 0 | 2.2 | 2.18 | 3.35 |
+| reload-ossl30-classical-r500-t2 | 90.8 | reload n=3 master=30865 | 1500 | 0 | 2.2 | 2.18 | 4.07 |
+| reload-ossl30-classical-r500-t2 | 120.8 | reload n=4 master=30865 | 1500 | 0 | 2.21 | 2.18 | 2.52 |
+| reload-ossl30-classical-r500-t2 | 150.8 | reload n=5 master=30865 | 1500 | 0 | 2.2 | 2.18 | 3.41 |
+| reload-ossl30-classical-r500-t2 | 180.8 | reload n=6 master=30865 | 1500 | 0 | 2.21 | 2.18 | 3.38 |
+| reload-ossl30-classical-r500-t2 | 210.8 | reload n=7 master=30865 | 1500 | 0 | 2.21 | 2.18 | 3.06 |
+| reload-ossl30-classical-r500-t2 | 240.9 | reload n=8 master=30865 | 1500 | 0 | 2.2 | 2.18 | 3.12 |
+| reload-ossl30-classical-r500-t2 | 270.9 | reload n=9 master=30865 | 1500 | 0 | 2.16 | 2.18 | 4.21 |
+| reload-ossl30-classical-r500-t3 | 31.1 | reload n=1 master=37203 | 1500 | 0 | 2.17 | 2.16 | 3.09 |
+| reload-ossl30-classical-r500-t3 | 61.1 | reload n=2 master=37203 | 1500 | 0 | 2.17 | 2.16 | 3.06 |
+| reload-ossl30-classical-r500-t3 | 91.1 | reload n=3 master=37203 | 1500 | 0 | 2.17 | 2.16 | 3.18 |
+| reload-ossl30-classical-r500-t3 | 121.1 | reload n=4 master=37203 | 1500 | 0 | 2.16 | 2.16 | 3.91 |
+| reload-ossl30-classical-r500-t3 | 151.1 | reload n=5 master=37203 | 1500 | 0 | 2.16 | 2.16 | 3.01 |
+| reload-ossl30-classical-r500-t3 | 181.1 | reload n=6 master=37203 | 1500 | 0 | 2.16 | 2.16 | 3.01 |
+| reload-ossl30-classical-r500-t3 | 211.1 | reload n=7 master=37203 | 1500 | 0 | 2.17 | 2.16 | 2.6 |
+| reload-ossl30-classical-r500-t3 | 241.2 | reload n=8 master=37203 | 1500 | 0 | 2.18 | 2.16 | 4.85 |
+| reload-ossl30-classical-r500-t3 | 271.2 | reload n=9 master=37203 | 1500 | 0 | 2.17 | 2.16 | 4.91 |
+| reload-ossl35-pq-r500-t1 | 31.2 | reload n=1 master=28778 | 1500 | 0 | 2.27 | 2.3 | 3.43 |
+| reload-ossl35-pq-r500-t1 | 61.2 | reload n=2 master=28778 | 1500 | 0 | 2.33 | 2.3 | 3.23 |
+| reload-ossl35-pq-r500-t1 | 91.2 | reload n=3 master=28778 | 1500 | 0 | 2.34 | 2.3 | 3.28 |
+| reload-ossl35-pq-r500-t1 | 121.2 | reload n=4 master=28778 | 1500 | 0 | 2.33 | 2.3 | 4.82 |
+| reload-ossl35-pq-r500-t1 | 151.2 | reload n=5 master=28778 | 1500 | 0 | 2.33 | 2.3 | 4.19 |
+| reload-ossl35-pq-r500-t1 | 181.2 | reload n=6 master=28778 | 1500 | 0 | 2.31 | 2.3 | 3.68 |
+| reload-ossl35-pq-r500-t1 | 211.2 | reload n=7 master=28778 | 1500 | 0 | 2.3 | 2.3 | 3.3 |
+| reload-ossl35-pq-r500-t1 | 241.2 | reload n=8 master=28778 | 1500 | 0 | 2.31 | 2.3 | 4.32 |
+| reload-ossl35-pq-r500-t1 | 271.2 | reload n=9 master=28778 | 1500 | 0 | 2.31 | 2.3 | 4.26 |
+| reload-ossl35-pq-r500-t2 | 31.1 | reload n=1 master=35095 | 1500 | 0 | 2.27 | 2.29 | 2.66 |
+| reload-ossl35-pq-r500-t2 | 61.1 | reload n=2 master=35095 | 1500 | 0 | 2.27 | 2.29 | 3.9 |
+| reload-ossl35-pq-r500-t2 | 91.1 | reload n=3 master=35095 | 1500 | 0 | 2.28 | 2.29 | 3.07 |
+| reload-ossl35-pq-r500-t2 | 121.2 | reload n=4 master=35095 | 1500 | 0 | 2.29 | 2.29 | 3.68 |
+| reload-ossl35-pq-r500-t2 | 151.2 | reload n=5 master=35095 | 1500 | 0 | 2.27 | 2.29 | 3.9 |
+| reload-ossl35-pq-r500-t2 | 181.2 | reload n=6 master=35095 | 1500 | 0 | 2.29 | 2.29 | 2.86 |
+| reload-ossl35-pq-r500-t2 | 211.2 | reload n=7 master=35095 | 1500 | 0 | 2.31 | 2.29 | 2.98 |
+| reload-ossl35-pq-r500-t2 | 241.2 | reload n=8 master=35095 | 1500 | 0 | 2.33 | 2.29 | 3.6 |
+| reload-ossl35-pq-r500-t2 | 271.2 | reload n=9 master=35095 | 1500 | 0 | 2.29 | 2.29 | 3.98 |
+| reload-ossl35-pq-r500-t3 | 31.4 | reload n=1 master=39358 | 1500 | 0 | 2.28 | 2.28 | 3.0 |
+| reload-ossl35-pq-r500-t3 | 61.5 | reload n=2 master=39358 | 1500 | 0 | 2.29 | 2.28 | 3.98 |
+| reload-ossl35-pq-r500-t3 | 91.5 | reload n=3 master=39358 | 1500 | 0 | 2.28 | 2.28 | 3.97 |
+| reload-ossl35-pq-r500-t3 | 121.5 | reload n=4 master=39358 | 1500 | 0 | 2.32 | 2.28 | 3.71 |
+| reload-ossl35-pq-r500-t3 | 151.5 | reload n=5 master=39358 | 1500 | 0 | 2.29 | 2.28 | 5.04 |
+| reload-ossl35-pq-r500-t3 | 181.5 | reload n=6 master=39358 | 1500 | 0 | 2.28 | 2.28 | 3.22 |
+| reload-ossl35-pq-r500-t3 | 211.5 | reload n=7 master=39358 | 1500 | 0 | 2.28 | 2.28 | 5.02 |
+| reload-ossl35-pq-r500-t3 | 241.5 | reload n=8 master=39358 | 1500 | 0 | 2.27 | 2.28 | 2.96 |
+| reload-ossl35-pq-r500-t3 | 271.5 | reload n=9 master=39358 | 1500 | 0 | 2.3 | 2.28 | 4.03 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 31.2 | usr2 old_master=45903 | 1500 | 0 | 2.29 | 2.25 | 2.6 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 37.7 | winch old_master=45903 | 1500 | 0 | 2.3 | 2.25 | 3.0 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 67.7 | hup old_master=45903 (old workers respawn with old binary+config) | 1500 | 0 | 2.27 | 2.25 | 3.25 |
+| swap-fast-rollback-ossl30-classical-r500-t1 | 70.7 | quit new_master=46211 | 1500 | 0 | 2.17 | 2.25 | 2.83 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 31.7 | usr2 old_master=46926 | 1500 | 0 | 2.36 | 2.27 | 3.84 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 38.2 | winch old_master=46926 | 1500 | 0 | 2.3 | 2.27 | 2.55 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 68.2 | hup old_master=46926 (old workers respawn with old binary+config) | 1500 | 0 | 2.3 | 2.27 | 2.76 |
+| swap-fast-rollback-ossl30-classical-r500-t2 | 71.2 | quit new_master=47243 | 1500 | 0 | 2.18 | 2.27 | 2.41 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 31.2 | usr2 old_master=47943 | 1500 | 0 | 2.35 | 2.26 | 3.06 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 37.7 | winch old_master=47943 | 1500 | 0 | 2.27 | 2.26 | 3.03 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 67.7 | hup old_master=47943 (old workers respawn with old binary+config) | 1500 | 0 | 2.27 | 2.26 | 3.68 |
+| swap-fast-rollback-ossl30-classical-r500-t3 | 70.7 | quit new_master=48248 | 1500 | 0 | 2.17 | 2.26 | 3.1 |
+| swap-ossl30-classical-r500-t1 | 31.9 | usr2 old_master=41491 | 1500 | 0 | 2.27 | 2.27 | 3.53 |
+| swap-ossl30-classical-r500-t1 | 38.4 | winch old_master=41491 | 1500 | 0 | 2.26 | 2.27 | 3.81 |
+| swap-ossl30-classical-r500-t1 | 48.4 | quit old_master=41491 | 1500 | 0 | 2.26 | 2.27 | 3.72 |
+| swap-ossl30-classical-r500-t1 | 93.4 | usr2 old_master=41803 (naive) | 1500 | 0 | 2.29 | 2.27 | 2.58 |
+| swap-ossl30-classical-r500-t1 | 140.0 | usr2 old_master=41803 | 1500 | 0 | 2.27 | 2.27 | 3.75 |
+| swap-ossl30-classical-r500-t1 | 146.5 | winch old_master=41803 | 1500 | 0 | 2.2 | 2.27 | 3.61 |
+| swap-ossl30-classical-r500-t1 | 156.5 | quit old_master=41803 | 1500 | 0 | 2.2 | 2.27 | 3.1 |
+| swap-ossl30-classical-r500-t2 | 31.7 | usr2 old_master=42965 | 1500 | 0 | 2.34 | 2.29 | 5.85 |
+| swap-ossl30-classical-r500-t2 | 38.2 | winch old_master=42965 | 1500 | 0 | 2.3 | 2.29 | 3.12 |
+| swap-ossl30-classical-r500-t2 | 48.2 | quit old_master=42965 | 1500 | 0 | 2.31 | 2.29 | 3.43 |
+| swap-ossl30-classical-r500-t2 | 93.3 | usr2 old_master=43301 (naive) | 1500 | 0 | 2.29 | 2.29 | 3.83 |
+| swap-ossl30-classical-r500-t2 | 139.8 | usr2 old_master=43301 | 1500 | 0 | 2.32 | 2.29 | 3.87 |
+| swap-ossl30-classical-r500-t2 | 146.4 | winch old_master=43301 | 1500 | 0 | 2.2 | 2.29 | 3.57 |
+| swap-ossl30-classical-r500-t2 | 156.4 | quit old_master=43301 | 1500 | 0 | 2.19 | 2.29 | 3.37 |
+| swap-ossl30-classical-r500-t3 | 31.1 | usr2 old_master=44468 | 1500 | 0 | 2.37 | 2.29 | 2.92 |
+| swap-ossl30-classical-r500-t3 | 37.6 | winch old_master=44468 | 1500 | 0 | 2.27 | 2.29 | 3.56 |
+| swap-ossl30-classical-r500-t3 | 47.6 | quit old_master=44468 | 1500 | 0 | 2.28 | 2.29 | 3.5 |
+| swap-ossl30-classical-r500-t3 | 92.7 | usr2 old_master=44776 (naive) | 1500 | 0 | 2.3 | 2.29 | 3.19 |
+| swap-ossl30-classical-r500-t3 | 139.2 | usr2 old_master=44776 | 1500 | 0 | 2.38 | 2.29 | 3.21 |
+| swap-ossl30-classical-r500-t3 | 145.8 | winch old_master=44776 | 1500 | 0 | 2.18 | 2.29 | 3.46 |
+| swap-ossl30-classical-r500-t3 | 155.8 | quit old_master=44776 | 1500 | 0 | 2.18 | 2.29 | 2.67 |
+
+
+wrote results/summary.md, runs.csv, events.csv and <run>/timeline.png

@@ -1,0 +1,2 @@
+{"scenario": "swap-fast-rollback", "arm": "ossl30", "profile": "classical", "rate": 500, "trial": "3",
+ "duration_s": 105, "warm_s": 30, "finished_utc": "2026-11-08T09:23:52Z"}
